@@ -1,0 +1,35 @@
+
+-----------------------
+HTML/CSS Refences
+-----------------------
+
+HTML Tags http://www.w3schools.com/tags/default.asp
+
+CSS Properties http://www.w3schools.com/cssref/#background
+
+CSS Selectors: http://www.w3schools.com/cssref/css_selectors.asp
+
+-----------------------
+TF2 Colors
+-----------------------
+
+A deep commitment to purple: #7D4071
+Australium gold: #E7B53B
+After eight: #2D2D24
+
+https://wiki.teamfortress.com/wiki/Paint_Can
+
+
+-----------------------
+Google Fonts
+-----------------------
+
+Roboto (thin, regular & bold):
+
+https://fonts.google.com/selection?selection.family=Roboto:100,400,700
+
+-----------------------
+html/javascript slideshows
+-----------------------
+
+http://www.w3schools.com/w3css/w3css_slideshow.asp

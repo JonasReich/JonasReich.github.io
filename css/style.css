@@ -1,0 +1,125 @@
+/*
+TF2 Colors, that I want to use:
+
+A deep commitment to purple: #7D4071
+Australium gold: #E7B53B
+After eight: #2D2D24
+*/
+
+/* WHOLE PAGE */
+
+html, body {
+   height:100%;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+
+img {
+    margin: 20px;
+}
+
+body {
+    background-color: #fff;
+    align-items: center;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12;
+    color: #2D2D24;
+}
+
+header {
+    background-color: #7D4071;
+    color: #fff;
+}
+
+p, ol {
+    text-align: left;
+}
+
+/* HEADINGS */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #7D4071
+}
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 35px;
+}
+h3 {
+    font-size: 30px;
+}
+h4 {
+    font-size: 25px;
+}
+h5 {
+    font-size: 20px;
+}
+h6 {
+    font-size: 12px;
+}
+
+/* REGIONS */
+
+header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+header a:link,
+header a:visited,
+header a:active {
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover {
+    text-decoration: none;
+    color: #E7B53B;
+}
+
+#main-container {
+    padding: 5%;
+    max-width: 700px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+#skills table,
+#employment table {
+    width: 100%;
+}
+
+
+/* SPECIAL ITEMS */
+
+.circular--square {
+  border-radius: 50%;
+}
+
+.region-spacer
+{
+    height: 80px;
+}
+
+.leftalign {
+    text-align: left;
+}
+
+.rightalign {
+    text-align: right;
+}
+
+.centeralign {
+    text-align: center;
+}
