@@ -18,6 +18,7 @@ html, body {
 
 img {
     margin: 20px;
+    margin-top: 0px;
 }
 
 body {
@@ -26,7 +27,7 @@ body {
 
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 12;
+    font-size: 16px;
     color: #2D2D24;
 }
 
@@ -39,12 +40,43 @@ p, ol {
     text-align: left;
 }
 
+td {
+    vertical-align: top;
+    min-width: 20px;
+    min-height: 30px;
+    /*
+    border-style: solid;
+    */
+}
+
+tr {
+    height: 15px;
+}
+
+hr {
+    width: 300px;
+    margin: 5% auto;
+}
+
+a:link,
+a:visited,
+a:active {
+    color: #7D4071;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #E7B53B;
+}
+
 /* HEADINGS */
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    color: #7D4071
+    color: #7D4071;
+    margin: 0 auto;
+    margin-bottom: 5%;
 }
 h1 {
     font-size: 40px;
@@ -62,7 +94,7 @@ h5 {
     font-size: 20px;
 }
 h6 {
-    font-size: 12px;
+    font-size: 16px;
 }
 
 /* REGIONS */
@@ -122,4 +154,8 @@ header a:hover {
 
 .centeralign {
     text-align: center;
+}
+
+.date {
+    width: 100px;
 }
