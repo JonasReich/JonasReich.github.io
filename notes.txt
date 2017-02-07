@@ -33,3 +33,19 @@ html/javascript slideshows
 -----------------------
 
 http://www.w3schools.com/w3css/w3css_slideshow.asp
+
+-----------------------
+VS Code Extensions
+-----------------------
+
+anseki.vscode-color
+
+Zignd.html-css-class-completion
+
+ecmel.vscode-html-css
+
+abusaidm.html-snippets
+
+mkaufman.HTMLHint
+
+bajdzis.vscode-refresh-html
