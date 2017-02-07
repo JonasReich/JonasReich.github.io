@@ -62,10 +62,10 @@ a:link,
 a:visited,
 a:active {
     color: #7D4071;
+    text-decoration: none;
 }
 
 a:hover {
-    text-decoration: none;
     color: #E7B53B;
 }
 
