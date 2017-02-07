@@ -6,7 +6,9 @@ Australium gold: #E7B53B
 After eight: #2D2D24
 */
 
-/* WHOLE PAGE */
+/*---------------------------------*/
+/* EVERYWHERE */
+/*---------------------------------*/
 
 html, body {
    height:100%;
@@ -16,28 +18,12 @@ html, body {
    border: 0;
 }
 
-img {
-    margin: 20px;
-    margin-top: 0px;
-}
-
-body {
-    background-color: #fff;
-    align-items: center;
-
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: #2D2D24;
-}
-
-header {
-    background-color: #7D4071;
-    color: #fff;
-}
-
 p, ol {
     text-align: left;
+}
+
+table {
+    width:100%;
 }
 
 td {
@@ -55,7 +41,6 @@ tr {
 
 hr {
     width: 300px;
-    margin: 5% auto;
 }
 
 a:link,
@@ -69,7 +54,46 @@ a:hover {
     color: #E7B53B;
 }
 
+/* Header */
+
+header {
+    background-color: #7D4071;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-weight: 100;
+    font-size: 50px;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+header a:link,
+header a:visited,
+header a:active {
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover {
+    text-decoration: none;
+    color: #E7B53B;
+}
+
+/* Body */
+
+body {
+    background-color: #fff;
+    align-items: center;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #2D2D24;
+}
+
+/*---------------------------------*/
 /* HEADINGS */
+/*---------------------------------*/
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
@@ -97,28 +121,54 @@ h6 {
     font-size: 16px;
 }
 
-/* REGIONS */
+/*---------------------------------*/
+/* BUTTONS */
+/*---------------------------------*/
 
-header {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    font-size: 50px;
-    text-align: center;
-    padding: 30px;
-    margin-bottom: 20px;
-}
-
-header a:link,
-header a:visited,
-header a:active {
-    text-decoration: none;
+button {
+    background-color: #7D4071;
+    border-radius: 50%;
+    border: none;
     color: white;
+    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
 }
 
-header a:hover {
-    text-decoration: none;
-    color: #E7B53B;
+
+button:hover {
+    background-color: #E7B53B;
 }
+
+.slideArrow {
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.slideDots, .slideDots-selected {
+    height: 13px;
+    width: 13px;
+    border-style: none;
+    
+}
+
+.slideDots {
+    background-color: #7D4071;
+}
+
+.slideDots-selected {
+    background-color: #E7B53B;
+}
+
+/*---------------------------------*/
+/* REGIONS */
+/*---------------------------------*/
+
+/*Main Content*/
 
 #main-container {
     padding: 5%;
@@ -127,23 +177,35 @@ header a:hover {
     margin: 0px auto;
 }
 
-#skills table,
-#employment table {
-    width: 100%;
-}
-
-
 /* SPECIAL ITEMS */
 
 .circular--square {
   border-radius: 50%;
 }
 
-.region-spacer
-{
-    height: 80px;
+img.icon, img.circular--square {
+    margin: 20px;
+    margin-top: 0px;
 }
 
+.date {
+    width: 100px;
+}
+h6.date {
+    text-align: right!important;
+}
+
+
+/* region separator */
+div.region-spacer {
+    height: 80px;
+}
+hr.region-spacer {
+    margin: 5% auto;
+}
+
+
+/*idontlike
 .leftalign {
     text-align: left;
 }
@@ -154,8 +216,32 @@ header a:hover {
 
 .centeralign {
     text-align: center;
+    width: 100%;
 }
 
-.date {
-    width: 100px;
+
+.right {
+    float: right;
+    padding-right: 30px;
+}
+
+.left {
+    float: left;
+    padding-left: 30px;
+}
+
+.slides-bar {
+    background-color: rgba(73, 73, 73, 0.78);
+    width:100%;
+    max-width: 100%;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,0%);
+    -ms-transform: translate(-50%,0%);
+    padding-bottom:1%;
+    padding-top: 1%;
 }
