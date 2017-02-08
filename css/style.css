@@ -142,28 +142,6 @@ button:hover {
     background-color: #E7B53B;
 }
 
-.slideArrow {
-    height: 30px;
-    width: 30px;
-    vertical-align: middle;
-    text-align: center;
-}
-
-.slideDots, .slideDots-selected {
-    height: 13px;
-    width: 13px;
-    border-style: none;
-    
-}
-
-.slideDots {
-    background-color: #7D4071;
-}
-
-.slideDots-selected {
-    background-color: #E7B53B;
-}
-
 /*---------------------------------*/
 /* REGIONS */
 /*---------------------------------*/
@@ -229,6 +207,12 @@ hr.region-spacer {
     float: left;
     padding-left: 30px;
 }
+*/
+
+.slides-bar-anchor {
+    position:relative;
+    width:100%;
+}
 
 .slides-bar {
     background-color: rgba(73, 73, 73, 0.78);
@@ -244,4 +228,34 @@ hr.region-spacer {
     -ms-transform: translate(-50%,0%);
     padding-bottom:1%;
     padding-top: 1%;
+}
+
+.slides-arrow-left:hover, .slides-arrow-right:hover {
+    cursor: pointer;
+    color: #E7B53B;
+}
+
+.slides-arrow-right {
+    float: right;
+    padding-right: 5%;
+}
+
+.slides-arrow-left {
+    float: left;
+    padding-left: 5%;
+}
+
+.slideDots, .slideDots-selected {
+    height: 13px;
+    width: 13px;
+    border-style: none;
+    
+}
+
+.slideDots {
+    background-color: rgba(255, 255, 255, 0.8)
+}
+
+.slideDots-selected {
+    background-color: #E7B53B;
 }

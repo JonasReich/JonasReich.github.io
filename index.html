@@ -220,45 +220,26 @@
 				<img class="slides" src="images/Aeronauts/screenshot05.PNG" style="width:100%">
 				<img class="slides" src="images/Aeronauts/screenshot06.PNG" style="width:100%">
 				<img class="slides" src="images/Aeronauts/screenshot07.PNG" style="width:100%">
-				<div style="position:relative; width:100%">
+
+
+				<div class="slides-bar-anchor">
 					<div class="slides-bar">
-						<table style="width:100%;">
-							<tr>
-								<td>
-									<div class="left" onclick="plusDivs(-1)">❮</div>
-									<div class="right" onclick="plusDivs(1)">❯</div>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<hr>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									Caption</td>
-							</tr>
-						</table>
+						<div class="slides-arrow-left" onclick="plusDivs(-1)">❮</div>
+						<div class="slides-arrow-right" onclick="plusDivs(1)">❯</div>
+
+						<button class="slideDots" onclick="currentDiv(1)"></button>
+						<button class="slideDots" onclick="currentDiv(2)"></button>
+						<button class="slideDots" onclick="currentDiv(3)"></button>
+						<button class="slideDots" onclick="currentDiv(4)"></button>
+						<button class="slideDots" onclick="currentDiv(5)"></button>
+						<button class="slideDots" onclick="currentDiv(6)"></button>
+						<button class="slideDots" onclick="currentDiv(7)"></button>
 					</div>
 				</div>
 				<!--
-			<table class="centeralign">
-				<td><button class="slideArrow" onclick="plusDivs(-1)">&#10094;</button></td>
-				<td><button class="slideDots demo" onclick="currentDiv(1)"></button></td>
-				<td><button class="slideDots demo" onclick="currentDiv(2)"></button></td>
-				<td><button class="slideDots demo" onclick="currentDiv(3)"></button></td>
-				<td><button class="slideDots demo" onclick="currentDiv(4)"></button></td>
-				<td><button class="slideDots demo" onclick="currentDiv(5)"></button></td>
-				<td><button class="slideDots demo" onclick="currentDiv(6)"></button></td>
-				<td><button class="slideDots demo" onclick="currentDiv(7)"></button></td>
-				<td><button class="slideArrow" onclick="plusDivs(1)">&#10095;</button></td>
-			</table>
 				-->
+				<script src="scripts/slides.js"></script>
 			</div>
-
-			<script src="scripts/slides.js">
-
-			</script>
 		</div>
 	</div>
 </body>
