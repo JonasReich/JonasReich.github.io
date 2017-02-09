@@ -1,5 +1,12 @@
 
 -----------------------
+SLIPSUM Generator
+-----------------------
+
+http://slipsum.com/
+
+
+-----------------------
 HTML/CSS Refences
 -----------------------
 
@@ -8,6 +15,7 @@ HTML Tags http://www.w3schools.com/tags/default.asp
 CSS Properties http://www.w3schools.com/cssref/#background
 
 CSS Selectors: http://www.w3schools.com/cssref/css_selectors.asp
+
 
 -----------------------
 TF2 Colors
@@ -28,11 +36,13 @@ Roboto (thin, regular & bold):
 
 https://fonts.google.com/selection?selection.family=Roboto:100,400,700
 
+
 -----------------------
 html/javascript slideshows
 -----------------------
 
 http://www.w3schools.com/w3css/w3css_slideshow.asp
+
 
 -----------------------
 VS Code Extensions
