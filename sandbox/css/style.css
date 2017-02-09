@@ -1,0 +1,124 @@
+/*
+A deep commitment to purple: #7D4071
+Australium gold: #E7B53B
+After eight: #2D2D24
+*/
+
+html, body{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	text-align: left;
+	background-color: white;
+	color: #2D2D24;
+
+	height:100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	text-align: center;
+	width: 100%;
+	align-items: center;
+}
+
+header {
+	display:block;
+    color: #7D4071;
+    text-align: center;
+    padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+header :any-link {
+	color: #7D4071;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #7D4071;
+	padding: 0px auto;
+	margin: 0px auto;
+}
+
+hr {
+	width: 15%;
+}
+
+header h1, header h2, header h3, header h4, header h5, header h6{
+	font-size: 250%;
+	font-weight: 100;
+}
+
+main {
+	width: 100%;
+	max-width: 80%;
+	text-align: center;
+	padding: 5%;
+    margin: 0px auto;
+
+	/*spacer*/
+	min-height: 1000px;
+}
+
+main * {
+    text-align: left;
+}
+
+:any-link {
+	color: #7D4071;
+}
+
+button {
+	border: solid;
+	color: white;
+	border-color:white;
+	background-color: inherit;
+	height: 35px;
+	border-width: 1px;
+	font: inherit;
+}
+
+button:hover{
+	background-color: #E7B53B;
+}
+
+.sticky {
+	position: sticky;
+	top: 0px;
+}
+
+#main-menu {
+	background-color: #7D4071;
+	color: white;
+
+	padding: 15px;
+	padding-right: 15%;
+	padding-left: 15%;
+
+	display: flex;
+	justify-content: space-around;
+	text-align: justify;
+}
+
+.section-spacer hr{
+    margin: 5% auto;
+}
+
+.center-wrapper {
+   height:100%;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+.center-wrapper td {
+   vertical-align: middle;
+   text-align: center;
+}
+
+:any-link:hover {
+	color:#E7B53B;
+}
