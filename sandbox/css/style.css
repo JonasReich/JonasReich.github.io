@@ -59,6 +59,11 @@ header h1, header h2, header h3, header h4, header h5, header h6{
 	text-align: center;
 }
 
+table, tr, td, tbody {
+	margin: 0 auto;
+	padding: 0;
+}
+
 main {
     margin: 0px auto;
 	width: 100%;
@@ -249,4 +254,87 @@ table.centered {
 	.timeline li:nth-of-type(2n+1) {
 		clear: both;
 	}
+}
+
+/*-----------------------*/
+/*------- SLIDES --------*/
+/*-----------------------*/
+
+.slides-bar-anchor {
+    position:relative;
+    width:100%;
+	text-align: center;
+}
+
+.slides-bar {
+    background-color: rgba(73, 73, 73, 0.78);
+    width:99%;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    position: absolute;
+    bottom: 5px;
+	left: 0px;
+	right: 0px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+	margin: 0 auto;
+}
+
+.slides-arrow-left:hover, .slides-arrow-right:hover {
+    cursor: pointer;
+    color: #E7B53B;
+}
+
+.slideDots:hover {
+	cursor: pointer;
+	background-color: #E7B53B;
+}
+
+.slides-arrow-right {
+    float: right;
+    padding-right: 5%;
+}
+
+.slides-arrow-left {
+    float: left;
+    padding-left: 5%;
+}
+
+.slideDots, .slideDots-selected {
+    height: 13px;
+    width: 13px;
+    border-style: none;
+    border-radius: 50%;
+}
+
+.slideDots {
+    background-color: rgba(255, 255, 255, 0.8)
+}
+
+.slideDots-selected {
+    background-color: #E7B53B;
+}
+
+.slides p {
+	text-align: center;
+	
+	background-color: rgba(73, 73, 73, 0.78);
+    width: 99%;
+    color: white;
+    position: absolute;
+	right: 0px;
+	left: 0px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+	margin: 0 auto;
+}
+
+.slide-container{
+	background: black;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
 }
