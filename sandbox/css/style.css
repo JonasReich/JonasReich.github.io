@@ -199,10 +199,6 @@ table.centered {
 .timeline h4 {
 	margin-top: 0;
 }
-  
-.timeline time {
-	font-style: italic;
-}
 
 
 @media screen and (min-width: 40em) {
@@ -268,7 +264,7 @@ table.centered {
 
 .slides-bar {
     background-color: rgba(73, 73, 73, 0.78);
-    width:99%;
+    width:100%;
     color: white;
     font-weight: 700;
     font-size: 20px;
@@ -332,8 +328,13 @@ table.centered {
 }
 
 .slide-container{
-	background: black;
-	text-align: center;
-	vertical-align: middle;
-	width: 100%;
+	width: 80%; margin: 0 auto; position:relative;
+}
+
+time {
+	font-style: italic;
+}
+
+section#projects time {
+	float: right;
 }
