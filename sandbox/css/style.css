@@ -31,6 +31,7 @@ header {
     text-align: center;
     padding-top: 30px;
 	padding-bottom: 60px;
+	
 }
 
 header :any-link {
@@ -84,17 +85,6 @@ a, a:visited {
 	padding: 50px;
 }
 
-#main-menu a {
-	color: white;
-	text-decoration: none;
-	margin-right: 15px;
-	margin-left: 15px;
-}
-
-#main-menu a:hover {
-	color: #E7B53B;
-}
-
 #main-menu {
 	background-color: #7D4071;
 	padding-bottom: 15px;
@@ -104,6 +94,45 @@ a, a:visited {
 	width: 100%;
 	z-index: 1000;
 	left:0px;
+
+	box-shadow: 0px 2px 5px black;
+}
+
+div.button, a.button {
+	color:white;
+	text-decoration: none;
+	padding: 15px 30px 15px 30px;
+	background-color: #7D4071;
+	text-align: center;
+}
+
+a.button-container {
+	text-decoration: none;
+}
+
+img {
+	box-shadow: 2px 2px 5px #888888;
+}
+
+.timeline img, #about-me img, #skills img {
+	box-shadow: 0px 0px 0px;
+}
+
+div.button {
+	width: 90%;
+	text-align: center;
+	padding: 15px 0px 15px 0px;
+
+	background-color: white;
+	border: 1px solid #7D4071;
+	color: #7D4071;
+	box-shadow: 1px 1px 5px #888888;
+}
+
+a.button:hover, div.button:hover {
+	background-color: #E7B53B;
+	color: white;
+	text-decoration: none;
 }
 
 .section-spacer  {
@@ -185,6 +214,8 @@ section{
 	margin-bottom: 1em;
 	position: relative;
 	border: 2px #7D4071 solid;
+	
+	box-shadow: 2px 2px 5px #888888;
 }
 
 .timeline:before {
@@ -223,10 +254,15 @@ section{
 	.timeline li:nth-child(even) {
 		float: right;
 		margin-top: 2em;
+
+		/*box shadow margin*/
+		margin-right:5px;
 	}
 	
 	.timeline li:nth-child(odd) {
 		float: left;
+
+		margin-left:5px;
 	}
 
 	.timeline li:nth-child(odd):before {
@@ -276,6 +312,8 @@ section{
     padding-top: 5px;
 
 	margin: 0 auto;
+	
+	box-shadow: 0px -2px 5px black;
 }
 
 .slides-arrow-left:hover, .slides-arrow-right:hover {
@@ -325,10 +363,11 @@ section{
 	padding: 10px;
 
 	margin: 0 auto;
+
+	box-shadow: 0px 2px 5px black;
 }
 
 .slide-container{
-	width: 80%;
 	margin: 0 auto;
 	position:relative;
 

@@ -13,11 +13,11 @@
 
 <body>
 	<div id="main-menu" style="position: fixed; top: 0px; width: 100%; z-index: 1000; left:0px;">
-		<a href="#">About Me</a>
-		<a href="#skills">Skills</a>
-		<a href="#career">Career</a>
-		<a href="#projects">Projects</a>
-		<a href="#contact">Contact</a>
+		<a class="button" href="#">About Me</a>
+		<a class="button" href="#skills">Skills</a>
+		<a class="button" href="#career">Career</a>
+		<a class="button" href="#projects">Projects</a>
+		<a class="button" href="#contact">Contact</a>
 	</div>
 	<header id="page-title">
 		<h1>Jonas Reich</h1>
@@ -195,70 +195,78 @@
 					</p>
 				</div>
 				<hr>
-				<div id="aeronauts">
-					<img src="../images/Aeronauts/AeronautsIcon.png" alt="" style="width: 20%; float: left; margin-bottom: 15px; margin-right: 15px;">
-					<time>Summer 2016</time>
-					<h3>Aeronauts</h3>
+				<table id="aeronauts">
+					<td style="vertical-align: top;">
+						<img src="../images/Aeronauts/AeronautsIcon.png" alt="" style="width: 90%; margin-bottom: 30px;">
 
-					<p>
-						<i>
+						<a class="button-container" href="">
+							<div class="button">button</div>
+						</a>
+					</td>
+					<td>
+						<time>Summer 2016</time>
+						<h3>Aeronauts</h3>
+
+						<p>
+							<i>
 						<b>Field of work:</b> Game Design, UX Design, UI Programming
 						<br><b>Technologies:</b> Unity3D, C#
 						</i>
-						<br>
-						<br>Aeronauts is an Android strategy/building game in which you gather resources to manage expeditions to neighbouring
-						floating islands. The game was created during the practical phase of my 2nd semester in a joint effort of 2nd and 3rd
-						semester sutdents.
-					</p>
-					<table class="center-wrapper slide-container">
-						<td>
-							<div class="slides">
-								<p>The main island is where all the buildings are located.</p>
-								<img src="../images/Aeronauts/screenshot01.PNG" style="width:100%">
-							</div>
-							<div class="slides">
-								<p>When the game is first started, you are greeted by an Aeronaut worker and introduced to the core game mechanics.</p>
-								<img src="../images/Aeronauts/screenshot02.PNG" style="width:100%">
-							</div>
-							<div class="slides">
-								<p>You can construct various buildings on your main island.</p>
-								<img src="../images/Aeronauts/screenshot03.PNG" style="width:100%">
-							</div>
-							<div class="slides">
-								<p>You can start expeditions to neighbouring dungeon islands.</p>
-								<img src="../images/Aeronauts/screenshot04.PNG" style="width:100%">
-							</div>
-							<div class="slides">
-								<p>Expeditions are the key to a steady supply of resources.</p>
-								<img src="../images/Aeronauts/screenshot05.PNG" style="width:100%">
-							</div>
-							<div class="slides">
-								<p>There is a multitude of dungeon islands to explore.</p>
-								<img src="../images/Aeronauts/screenshot06.PNG" style="width:100%">
-							</div>
-							<div class="slides">
-								<p>At times you're required to engage in fights versus dangerous insectuous creatures.</p>
-								<img src="../images/Aeronauts/screenshot07.PNG" style="width:100%">
-							</div>
-
-							<div class="slides-bar-anchor">
-								<div class="slides-bar">
-									<div class="slides-arrow-left" onclick="plusDivs(-1)">❮</div>
-									<div class="slides-arrow-right" onclick="plusDivs(1)">❯</div>
-
-									<button class="slideDots" onclick="currentDiv(1)"></button>
-									<button class="slideDots" onclick="currentDiv(2)"></button>
-									<button class="slideDots" onclick="currentDiv(3)"></button>
-									<button class="slideDots" onclick="currentDiv(4)"></button>
-									<button class="slideDots" onclick="currentDiv(5)"></button>
-									<button class="slideDots" onclick="currentDiv(6)"></button>
-									<button class="slideDots" onclick="currentDiv(7)"></button>
+							<br>
+							<br>Aeronauts is an Android strategy/building game in which you gather resources to manage expeditions to neighbouring
+							floating islands. The game was created during the practical phase of my 2nd semester in a joint effort of 2nd and
+							3rd semester sutdents.
+						</p>
+						<table class="center-wrapper slide-container">
+							<td>
+								<div class="slides">
+									<p>The main island is where all the buildings are located.</p>
+									<img src="../images/Aeronauts/screenshot01.PNG" style="width:100%">
 								</div>
-							</div>
-							<script src="../scripts/slides.js"></script>
-						</td>
-					</table>
-				</div>
+								<div class="slides">
+									<p>When the game is first started, you are greeted by an Aeronaut worker and introduced to the core game mechanics.</p>
+									<img src="../images/Aeronauts/screenshot02.PNG" style="width:100%">
+								</div>
+								<div class="slides">
+									<p>You can construct various buildings on your main island.</p>
+									<img src="../images/Aeronauts/screenshot03.PNG" style="width:100%">
+								</div>
+								<div class="slides">
+									<p>You can start expeditions to neighbouring dungeon islands.</p>
+									<img src="../images/Aeronauts/screenshot04.PNG" style="width:100%">
+								</div>
+								<div class="slides">
+									<p>Expeditions are the key to a steady supply of resources.</p>
+									<img src="../images/Aeronauts/screenshot05.PNG" style="width:100%">
+								</div>
+								<div class="slides">
+									<p>There is a multitude of dungeon islands to explore.</p>
+									<img src="../images/Aeronauts/screenshot06.PNG" style="width:100%">
+								</div>
+								<div class="slides">
+									<p>At times you're required to engage in fights versus dangerous insectuous creatures.</p>
+									<img src="../images/Aeronauts/screenshot07.PNG" style="width:100%">
+								</div>
+
+								<div class="slides-bar-anchor">
+									<div class="slides-bar">
+										<div class="slides-arrow-left" onclick="plusDivs(-1)">❮</div>
+										<div class="slides-arrow-right" onclick="plusDivs(1)">❯</div>
+
+										<button class="slideDots" onclick="currentDiv(1)"></button>
+										<button class="slideDots" onclick="currentDiv(2)"></button>
+										<button class="slideDots" onclick="currentDiv(3)"></button>
+										<button class="slideDots" onclick="currentDiv(4)"></button>
+										<button class="slideDots" onclick="currentDiv(5)"></button>
+										<button class="slideDots" onclick="currentDiv(6)"></button>
+										<button class="slideDots" onclick="currentDiv(7)"></button>
+									</div>
+								</div>
+								<script src="../scripts/slides.js"></script>
+							</td>
+						</table>
+					</td>
+				</table>
 				<hr>
 				<div id="feuer-flamme">
 					<img src="../images/feuerUndFlamme.png" alt="" style="width: 20%; float: left; margin-bottom: 15px; margin-right: 15px;">
