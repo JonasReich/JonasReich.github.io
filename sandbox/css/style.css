@@ -121,6 +121,11 @@ a, a:visited {
    vertical-align: middle;
    text-align: center;
 }
+table.centered {
+	width: 100%;
+	margin-top: 30px;
+	max-width: 100%;
+}
 
 section{
 	min-height: 325px;
@@ -132,25 +137,20 @@ section{
 }
 
 .container {
-text-align: left;
+	text-align: left;
 	max-width: 800px;
 	padding: 5%;
 	width: 80%;
 	margin: 0 auto;
 }
 
-:any-link:hover {
-	color:#E7B53B;
-}
 
 .circular {
 	border-radius: 50%;
 }
 
-table.centered {
-	width: 100%;
-	margin-top: 30px;
-	max-width: 100%;
+#projects hr {
+	margin-top: 50px; margin-bottom:50px; width: 30%;
 }
 
 /*-----------------------*/
@@ -328,7 +328,11 @@ table.centered {
 }
 
 .slide-container{
-	width: 80%; margin: 0 auto; position:relative;
+	width: 80%;
+	margin: 0 auto;
+	position:relative;
+
+	margin-top: 30px; margin-bottom: 30px;
 }
 
 time {
@@ -337,4 +341,29 @@ time {
 
 section#projects time {
 	float: right;
+}
+
+/****/
+
+.progress-bar {
+	width: 80%;
+	background: rgba(45, 45, 36, 0.1);
+	margin: 15px auto;
+	padding: 5px;
+	width: 150px;
+}
+
+.progress-bar .progress {
+	background: #E7B53B;
+	height: 10px;
+}
+
+
+
+:any-link:hover {
+	color:#E7B53B;
+}
+
+a:hover {
+	color:#E7B53B;
 }
