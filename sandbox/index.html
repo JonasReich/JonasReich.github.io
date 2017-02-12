@@ -12,42 +12,198 @@
 </head>
 
 <body>
-	<header id="page-title">
-		<h1>Max Mustermann</h1>
-		Experte für Alles
-	</header>
-	<div id="main-menu" class="sticky">
-		<button>button 1</button>
-		<button>button 2</button>
-		<button>button 3</button>
+	<div id="main-menu" style="position: fixed; top: 0px; width: 100%; z-index: 1000; left:0px;">
+		<a href="#">About Me</a>
+		<a href="#skills">Skills</a>
+		<a href="#career">Career</a>
+		<a href="#projects">Projects</a>
+		<a href="#contact">Contact</a>
 	</div>
+	<header id="page-title">
+		<h1>Jonas Reich</h1>
+		Game Design Student and UX Programmer
+	</header>
 	<main>
-		<section id="first-section">
-			<table class="center-wrapper">
-				<td><img src="../images/profilfoto.jpg" class="center-image" style="border-radius: 50%;" alt=""></td>
-			</table>
-			<div style="height: 20px;"></div>
-			<header>
-				<h2>Section Header #1</h2>
-			</header>
-			<h3>Hold on to your butts</h3>
-			<p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't
-				get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too
-				fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on
-				the same curve, just on opposite ends. </p>
-
-			<a href="">and an empty link to top it off</a>
+		<section id="about-me">
+			<div class="container">
+				<table class="center-wrapper">
+					<td><img src="../images/profilfoto.jpg" class="circular" style="max-width: 50%;" alt=""></td>
+				</table>
+				<div style="height: 20px;"></div>
+				<p>
+					Hi,<br>
+					<br> I’m a German game design student from Munich. I’ve been studying since summer 2015. Since then I had a shot at
+					every aspect of game-making there is. Game design, programming, drawing, modeling, compositing, you name it…<br> It
+					took me quite a while to figure out which part of the business I was most interested in. Eventually I was able to boil
+					my preferences down to three aspects:
+					<ol>
+						<li>I’ve always loved to act as a bridge between team departments and make sure everybody was working towards the same
+							goal
+						</li>
+						<li>The way games communicate ideas and concepts to the player was always a major design priority in my eyes</li>
+						<li>The roles I adopted in student projects were always related to both high level game design and programming</li>
+					</ol>
+				</p>
+			</div>
 		</section>
-		<div class="section-spacer">
-			<hr>
-		</div>
-		<section id="second-section">
-			<header>
-				<h2>Second Section</h2>
-			</header>
+		<div class="section-spacer"></div>
+		<section id="skills">
+			<div class="container" style="text-align: center;">
+				<header>
+					<h2>Skills</h2>
+				</header>
+				range:<br> fundamental – basic – intermediate – advanced – expert
+				<table class="centered">
+					<tr>
+						<td style="width:30%"><img src="../images/gameMakerStudioIcon.png" class="circular" style="margin: 15px; max-width: 70%;" alt="" width="100">
+							<h3>GameMaker Studio</h3>intermediate
+						</td>
+						<td style="width:30%"><img src="../images/unityIcon.png" alt="" style="margin: 15px; max-width: 70%;" width="100">
+							<h3>Unity</h3>advanced
+						</td>
+						<td style="width:30%"><img src="../images/unrealIcon.png" alt="" style="margin: 15px; max-width: 70%;" width="100">
+							<h3>Unreal Engine</h3>fundamental
+						</td>
+					</tr>
+				</table>
+			</div>
+		</section>
+		<div class="section-spacer"></div>
+		<section id="career">
+			<div class="container">
+				<header>
+					<h2>Career</h2>
+				</header>
+				<div class="timeline">
+					<ul>
+						<li>
+							<h4>Internship at your company</h4>
+							<p>
+								Interested?<br>
+								<br>
+								<a href="#contact">Contact me...</a>
+							</p>
+							<hr>
+							<time>Fall 2017 - Spring 2018</time>
+						</li>
+						<li>
+							<table class="center-wrapper">
+								<td><img src="../images/mdhlogo.jpg" class="center-image" style="width: 50%; margin-bottom: 10px;" alt=""></td>
+							</table>
+							<hr>
+							<h4>Student Assistant at Mediadesign Hochschule München</h4>
+							<p>
+								Field of work: IT Support, Programming, Paperwork
+							</p>
+							<hr>
+							<time>since Fall 2016 (ongoing)</time>
+						</li>
+						<li>
+							<table class="center-wrapper">
+								<td><img src="../images/mdhlogo.jpg" class="center-image" style="width: 50%; margin-bottom: 10px;" alt=""></td>
+							</table>
+							<hr>
+							<h4>University: Gamedesign, B.Sc. at Mediadeisgn Hochschule München</h4>
+							<p>
+								Gamedesign bachelor studies with an elevated focus on practical application.
+								<br>There are 4 project phases (a 1-2 months) and a 5-6 month internship in the 5th semester.
+							</p>
+							<hr>
+							<time>2015 - 2019 (ongoing)</time>
+						</li>
+						<li>
+							<table class="center-wrapper">
+								<td><img src="../images/mgmLogo.gif" class="center-image" style="width: 50%; margin-bottom: 10px;" alt=""></td>
+							</table>
+							<hr>
+							<h4>Highschool: Michaeli-Gymnasium München</h4>
+							<p>
+								I aquired my Abitur / University-Entrance Diploma (2.2) in 2015
+								<br>
+								<br><b>Final written exams:</b>
+								<br>English, German and Maths
+								<br>Final colloquial exams: Computer Sciences and Religious Education
+								<br>
+								<br><b>Extracurricular activities:</b>
+								<br>Movie-Workshop (2007-13), Industrial Product Design Course (2014-15)
+							</p>
+							<hr>
+							<time>2007 - 2015</time>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<div class="section-spacer"></div>
+		<section id="projects">
+			<div class="container">
+				<header>
+					<h2>Projects</h2>
+				</header>
+				<div id="runecast-defender">
+					<h3>Runecast Defender</h3>
+					<p>
+						Field of work: Programming, Game Design
+						<br>Technologies: Unity3D, C#
+						<br>
+						<br>This Oculus Touch game puts the player on top of a magic tower, that he is asked to defend against villainous monsters.
+						The player has two magic spells at his disposal which are controlled by a combination of pointing and grabbing.
+					</p>
+				</div>
+				<div id="aeronauts">
+					<h3>Aeronauts</h3>
+					<p>
+						Field of work: Game Design, UX Design, UI Programming
+						<br>Technologies: Unity3D, C#
+						<br>
+						<br>Aeronauts is an Android strategy/building game in which you gather resources to manage expeditions to neighbouring
+						floating islands. The game was created during the practical phase of my 2nd semester in a joint effort of 2nd and 3rd
+						semester sutdents.
+					</p>
+					<div class="" style="width: 80%; margin: 0 auto;">
+						<img class="slides" src="../images/Aeronauts/screenshot01.PNG" style="width:100%">
+						<img class="slides" src="../images/Aeronauts/screenshot02.PNG" style="width:100%">
+						<img class="slides" src="../images/Aeronauts/screenshot03.PNG" style="width:100%">
+						<img class="slides" src="../images/Aeronauts/screenshot04.PNG" style="width:100%">
+						<img class="slides" src="../images/Aeronauts/screenshot05.PNG" style="width:100%">
+						<img class="slides" src="../images/Aeronauts/screenshot06.PNG" style="width:100%">
+						<img class="slides" src="../images/Aeronauts/screenshot07.PNG" style="width:100%">
+
+
+						<div class="slides-bar-anchor">
+							<div class="slides-bar">
+								<div class="slides-arrow-left" onclick="plusDivs(-1)">❮</div>
+								<div class="slides-arrow-right" onclick="plusDivs(1)">❯</div>
+
+								<button class="slideDots" onclick="currentDiv(1)"></button>
+								<button class="slideDots" onclick="currentDiv(2)"></button>
+								<button class="slideDots" onclick="currentDiv(3)"></button>
+								<button class="slideDots" onclick="currentDiv(4)"></button>
+								<button class="slideDots" onclick="currentDiv(5)"></button>
+								<button class="slideDots" onclick="currentDiv(6)"></button>
+								<button class="slideDots" onclick="currentDiv(7)"></button>
+							</div>
+						</div>
+						<script src="../scripts/slides.js"></script>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="section-spacer"></div>
+		<section id="contact">
+			<div class="container">
+				<header>
+					<h2>Contact</h2>
+				</header>
+				<p style="text-align: center;">
+					<a href="mailto:email@jonasreich.de">email@jonasreich.de</a>
+					<br>
+					<br><a href="https://www.linkedin.com/in/jonasreich">LinkedIn</a>
+				</p>
+			</div>
 		</section>
 	</main>
-	<footer>
+	<footer style="background-color: #7D4071; height: 100px;">
 	</footer>
 </body>
 
