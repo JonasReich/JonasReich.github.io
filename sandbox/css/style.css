@@ -110,7 +110,7 @@ a.button-container {
 	text-decoration: none;
 }
 
-img {
+img, .progress-bar {
 	box-shadow: 2px 2px 5px #888888;
 }
 
@@ -182,6 +182,24 @@ section{
 	margin-top: 50px; margin-bottom:50px; width: 30%;
 }
 
+#projects td {
+	display: table-cell;
+	vertical-align: top;
+	width: 20%;
+}
+
+#projects td ~ td {
+	display: unset;
+	width: auto;
+}
+
+#projects td img {
+	width: 90%;
+	margin-bottom: 30px;
+}
+
+
+
 /*-----------------------*/
 /* ------ TIMELINE ------*/
 /*-----------------------*/
@@ -202,13 +220,13 @@ section{
 	border: 2px #7D4071 solid;
 }
   
-.timeline ul {
+.timeline > ul {
 	list-style: none;
 	padding: 0 1em 0 1em;
 	z-index: 1;
 }
   
-.timeline li {
+.timeline > ul > li {
 	background: white;
 	padding: 1em;
 	margin-bottom: 1em;
@@ -241,17 +259,17 @@ section{
 		width: 2px;
 	}
 	
-	.timeline ul {
+	.timeline > ul {
 		padding-left: 0;
 		max-width: 100%;
 		padding: 0;
 	}
 	
-	.timeline li {
+	.timeline > ul > li {
 		width: 42%;
 	}
 	
-	.timeline li:nth-child(even) {
+	.timeline > ul > li:nth-child(even) {
 		float: right;
 		margin-top: 2em;
 
@@ -259,13 +277,13 @@ section{
 		margin-right:5px;
 	}
 	
-	.timeline li:nth-child(odd) {
+	.timeline > ul > li:nth-child(odd) {
 		float: left;
 
 		margin-left:5px;
 	}
 
-	.timeline li:nth-child(odd):before {
+	.timeline > ul > li:nth-child(odd):before {
 		border-top: 1em solid #7D4071;
 		border-right: 1em solid transparent;
 		border-left: 1em;
@@ -273,7 +291,7 @@ section{
 		left: auto;
 	}
 
-	.timeline li:before {
+	.timeline > ul > li:before {
     	content: '';
     	width: 0;
     	height: 0;
@@ -283,7 +301,7 @@ section{
     	left: -1em;
 	}
 	
-	.timeline li:nth-of-type(2n+1) {
+	.timeline > ul > li:nth-of-type(2n+1) {
 		clear: both;
 	}
 }
@@ -397,6 +415,15 @@ section#projects time {
 	height: 10px;
 }
 
+/*-----------------------*/
+/*-------- FADE ---------*/
+/*-----------------------*/
+
+.button, .fade {
+	transition: background .25s ease-in-out, color .25s ease-in-out;
+	-moz-transition: background .25s ease-in-out, color .25s ease-in-out;
+	-webkit-transition: background .25s ease-in-out, color .25s ease-in-out;
+}
 
 
 :any-link:hover {
@@ -405,4 +432,36 @@ section#projects time {
 
 a:hover {
 	color:#E7B53B;
+}
+
+/*-----------------------*/
+/*------ COLLAPSE -------*/
+/*-----------------------*/
+
+.details,
+.show,
+.hide:target {
+  display: none;
+}
+.hide:target + .show,
+.hide:target ~ .details {
+  display: block;
+}
+
+a.hide {
+	padding-left: 0px;
+	padding-right: 0px;
+	display: block;
+}
+
+.hide.button, .show.button {
+	border: 1px #7D4071 solid;
+	background-color: transparent;
+	color: #2D2D24;
+	box-shadow: 0px 2px 5px #888888;
+}
+
+.hide.button:hover, .show.button:hover {
+	background-color: #E7B53B;
+	color: #2D2D24;
 }
