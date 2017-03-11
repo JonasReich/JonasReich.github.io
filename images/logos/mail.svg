@@ -1,0 +1,32 @@
+<svg
+   class="button"
+   width="36.589001"
+   height="25.101999">
+  
+  <g
+     id="g4"
+     transform="matrix(0.11188885,0,0,0.11188885,-18.181059,-14.973442)">
+    <g
+       id="svg_1"
+       transform="matrix(0.70710678,-0.70710678,0.70710678,0.70710678,-78.465079,302.56854)">
+      <path
+         d="M 144.5,209.7 362.30002,427.5 507.5,282.30002 289.70001,64.5 144.5,209.7 Z"
+         id="path3192"
+         stroke-miterlimit="0"
+         inkscape:connector-curvature="0"
+         style="fill:#ffffff;stroke:#000000;stroke-width:19;stroke-linejoin:bevel;stroke-miterlimit:0" />
+      <path
+         d="M 362.30002,427.5 144.5,209.7 l 193.60001,0 24.20001,24.20001 0,193.59999 z"
+         id="path3196"
+         stroke-miterlimit="0"
+         inkscape:connector-curvature="0"
+         style="fill:#ffffff;stroke:#000000;stroke-width:19;stroke-linejoin:bevel;stroke-miterlimit:0" />
+      <path
+         d="M 289.70001,64.5 507.5,282.30002 338.10001,258.10001 313.90002,233.90001 289.70001,64.5 Z"
+         id="path3198"
+         stroke-miterlimit="0"
+         inkscape:connector-curvature="0"
+         style="fill:#ffffff;stroke:#000000;stroke-width:19;stroke-linejoin:bevel;stroke-miterlimit:0" />
+    </g>
+  </g>
+</svg>
