@@ -87,7 +87,7 @@ a, a:visited {
 
 #main-menu {
 	background-color: #7D4071;
-	padding-bottom: 15px;
+	/*padding-bottom: 15px;*/
 	position: fixed;
 	top: 0px;
 	width: 100%;
@@ -101,7 +101,6 @@ a, a:visited {
 
 #main-menu li {
 	display: inline-block;
-	float: left;
 }
 
 #menu-icon {
@@ -114,10 +113,6 @@ a, a:visited {
 	top: 10px;
 }
 
-nav {
-	float: right;
-}
-
 div.button, a.button {
 	color:white;
 	text-decoration: none;
@@ -127,6 +122,10 @@ div.button, a.button {
 }
 
 @media only screen and (max-width : 640px) {
+	#main-menu {
+		padding-bottom: 15px;
+	}
+	
 	#menu-icon {
 		display:inline-block;
 	}
@@ -170,7 +169,7 @@ div.button, a.button {
 		display: block;
 	}
 
-	div.button, a.button {
+	#main-menu div.button, #main-menu a.button {
 		padding: 0px;
 		padding-top: 15px;
 		padding-bottom: 15px;
