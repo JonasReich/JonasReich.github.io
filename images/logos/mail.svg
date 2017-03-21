@@ -1,1 +1,7 @@
-<svg class="button" width="36.589" height="25.102"><g stroke-miterlimit="0" fill="#fff" stroke="#000" stroke-width="2.126" stroke-linejoin="bevel"><path d="M1.063 24.04h34.463V1.062H1.063V24.04z"/><path d="M35.526 24.04H1.063L16.38 8.721h3.83l15.316 15.317z"/><path d="M1.063 1.063h34.463L20.21 12.551h-3.83L1.063 1.063z"/></g></svg>
+<svg class="button" width="36.589" height="25.102">
+    <g stroke-miterlimit="0" fill="#fff" stroke="#000" stroke-width="2.126" stroke-linejoin="bevel">
+        <path d="M1.063 24.04h34.463V1.062H1.063V24.04z"/>
+        <path d="M35.526 24.04H1.063L16.38 8.721h3.83l15.316 15.317z"/>
+        <path d="M1.063 1.063h34.463L20.21 12.551h-3.83L1.063 1.063z"/>
+    </g>
+</svg>
