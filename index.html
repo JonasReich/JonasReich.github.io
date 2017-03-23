@@ -337,47 +337,48 @@
 						</p>
 						<table class="center-wrapper slide-container">
 							<td>
-								<div class="slides">
+								<div style="width: 100%;">
+								<div class="aeronautsSlides" style="display:block;">
 									<p>The main island is where all the buildings are located.</p>
-									<img src="images/Aeronauts/screenshot01.PNG" style="width:100%">
+									<img src="images/Aeronauts/screenshot01.PNG" style="width:100%;">
 								</div>
-								<div class="slides">
+								<div class="aeronautsSlides" style="display:none;">
 									<p>When the game is first started, you are greeted by an Aeronaut worker and introduced to the core game mechanics.</p>
-									<img src="images/Aeronauts/screenshot02.PNG" style="width:100%">
+									<img src="images/Aeronauts/screenshot02.PNG" style="width:100%;">
 								</div>
-								<div class="slides">
+								<div class="aeronautsSlides" style="display:none;">
 									<p>You can construct various buildings on your main island.</p>
-									<img src="images/Aeronauts/screenshot03.PNG" style="width:100%">
+									<img src="images/Aeronauts/screenshot03.PNG" style="width:100%;">
 								</div>
-								<div class="slides">
+								<div class="aeronautsSlides" style="display:none;">
 									<p>You can start expeditions to neighbouring dungeon islands.</p>
-									<img src="images/Aeronauts/screenshot04.PNG" style="width:100%">
+									<img src="images/Aeronauts/screenshot04.PNG" style="width:100%;">
 								</div>
-								<div class="slides">
+								<div class="aeronautsSlides" style="display:none;">
 									<p>Expeditions are the key to a steady supply of resources.</p>
-									<img src="images/Aeronauts/screenshot05.PNG" style="width:100%">
+									<img src="images/Aeronauts/screenshot05.PNG" style="width:100%;">
 								</div>
-								<div class="slides">
+								<div class="aeronautsSlides" style="display:none;">
 									<p>There is a multitude of dungeon islands to explore.</p>
-									<img src="images/Aeronauts/screenshot06.PNG" style="width:100%">
+									<img src="images/Aeronauts/screenshot06.PNG" style="width:100%;">
 								</div>
-								<div class="slides">
+								<div class="aeronautsSlides" style="display:none;">
 									<p>At times you're required to engage in fights versus dangerous insectuous creatures.</p>
-									<img src="images/Aeronauts/screenshot07.PNG" style="width:100%">
+									<img src="images/Aeronauts/screenshot07.PNG" style="width:100%;">
 								</div>
-
+								</div>
 								<div class="slides-bar-anchor">
 									<div class="slides-bar">
-										<div class="slides-arrow-left" onclick="plusDivs(-1)">❮</div>
-										<div class="slides-arrow-right" onclick="plusDivs(1)">❯</div>
+										<div class="slides-arrow-left" onclick="plusDivs(-1, 'aeronautsSlides')">❮</div>
+										<div class="slides-arrow-right" onclick="plusDivs(1, 'aeronautsSlides')">❯</div>
 
-										<button class="slideDots" onclick="currentDiv(1)"></button>
-										<button class="slideDots" onclick="currentDiv(2)"></button>
-										<button class="slideDots" onclick="currentDiv(3)"></button>
-										<button class="slideDots" onclick="currentDiv(4)"></button>
-										<button class="slideDots" onclick="currentDiv(5)"></button>
-										<button class="slideDots" onclick="currentDiv(6)"></button>
-										<button class="slideDots" onclick="currentDiv(7)"></button>
+										<button class="aeronautsSlidesDots aeronautsSlidesDots-selected" onclick="showDivs(0, 'aeronautsSlides')"></button>
+										<button class="aeronautsSlidesDots" onclick="showDivs(1, 'slides')"></button>
+										<button class="aeronautsSlidesDots" onclick="showDivs(2, 'slides')"></button>
+										<button class="aeronautsSlidesDots" onclick="showDivs(3, 'slides')"></button>
+										<button class="aeronautsSlidesDots" onclick="showDivs(4, 'slides')"></button>
+										<button class="aeronautsSlidesDots" onclick="showDivs(5, 'slides')"></button>
+										<button class="aeronautsSlidesDots" onclick="showDivs(6, 'slides')"></button>
 									</div>
 								</div>
 								<script src="scripts/slides.js"></script>

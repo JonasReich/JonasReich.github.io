@@ -5,33 +5,46 @@ var carouselDelay = 5; // in seconds
 //Uncomment to enable carousel:
 //carousel();
 
-showDivs(slideIndex);
+//showDivs(slideIndex, "slides");
 
-function plusDivs(n) {
-	showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-	showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
+function plusDivs(n, name) {
+	var slides = document.getElementsByClassName(name);
 	var i;
-	var x = document.getElementsByClassName("slides");
-	var dots = document.getElementsByClassName("slideDots");
-	if (n > x.length) { slideIndex = 1 }
-	if (n < 1) { slideIndex = x.length }
-	for (i = 0; i < x.length; i++) {
-		x[i].style.display = "none";
-	}
-	for (i = 0; i < dots.length; i++) {
-		dots[i].className = dots[i].className.replace(" slideDots-selected", "");
-	}
-	x[slideIndex - 1].style.display = "block";
-	dots[slideIndex - 1].className += " slideDots-selected";
+	for (i = 0; i < slides.length; i++)
+		if(slides[i].style.display == "block")
+			index = i;
+	
+	index += n;
+	showDivs(index, name);
 }
+
+function showDivs(index, name) {
+	var i;
+	var slides = document.getElementsByClassName(name);
+	var dots = document.getElementsByClassName(name + "Dots");
+
+	for (i = 0; i < slides.length; i++) {
+		if(slides[i].style.display == "block")
+			slides[i].style.display = "none";
+	}
+
+	if (index >= slides.length) { index = 0; }
+	if (index < 0 ) { index = slides.length - 1; }
+
+	for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" " + name + "Dots-selected", "");
+	}
+	slides[index].style.display = "block";
+	dots[index].className += " " + name + "Dots-selected";
+}
+
+
+
+/*
 
 function carousel() {
 	plusDivs(+1);
 	setTimeout(carousel, carouselDelay * 1000);
 }
+
+*/

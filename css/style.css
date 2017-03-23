@@ -395,11 +395,11 @@ section{
     font-weight: 700;
     font-size: 20px;
     position: absolute;
-    bottom: 5px;
+    bottom: 100%;
 	left: 0px;
 	right: 0px;
     padding-bottom: 5px;
-    padding-top: 5px;
+    margin-top: 5px;
 
 	margin: 0 auto;
 	
@@ -409,11 +409,6 @@ section{
 .slides-arrow-left:hover, .slides-arrow-right:hover {
     cursor: pointer;
     color: #E7B53B;
-}
-
-.slideDots:hover {
-	cursor: pointer;
-	background-color: #E7B53B;
 }
 
 .slides-arrow-right {
@@ -426,22 +421,26 @@ section{
     padding-left: 5%;
 }
 
-.slideDots, .slideDots-selected {
+.aeronautsSlidesDots {
+    background-color: rgba(255, 255, 255, 0.8)
+}
+
+.aeronautsSlidesDots-selected {
+    background-color: #E7B53B;
+}
+
+.aeronautsSlidesDots, .aeronautsSlidesDots-selected {
     height: 13px;
     width: 13px;
     border-style: none;
     border-radius: 50%;
 }
 
-.slideDots {
-    background-color: rgba(255, 255, 255, 0.8)
+.aeronautsSlidesDots:hover {
+	cursor: pointer;
+	background-color: #E7B53B;
 }
-
-.slideDots-selected {
-    background-color: #E7B53B;
-}
-
-.slides p {
+.aeronautsSlides p {
 	text-align: center;
 	
 	background-color: rgba(73, 73, 73, 0.78);
