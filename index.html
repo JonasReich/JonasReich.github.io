@@ -16,7 +16,11 @@
 <body>
 	<div id="main-menu" style="position: fixed; top: 0px; width: 100%; z-index: 1000; left:0px;">
 		<nav>
-			<a href="#" id="menu-icon"><div></div><div></div><div></div></a>
+			<a href="#" id="menu-icon">
+				<div></div>
+				<div></div>
+				<div></div>
+			</a>
 			<ul>
 				<li><a class="button" href="#">About Me</a></li>
 				<li><a class="button" href="#skills">Skills</a></li>
@@ -64,27 +68,27 @@
 				</header>
 				<!--range: fundamental 20% – basic 40% – intermediate 60% – advanced 80% – expert 100%-->
 				<h3 style="margin-bottom:50px;">Game Engines</h3>
-					<div style="display: inline-block; padding-left:20px; padding-right: 20px;"><img src="images/gameMakerStudioIcon.png" class="circular" style="margin: 15px; max-width: 70%;" alt="" width="100">
-						<h3>GameMaker Studio</h3>
-						<div class="progress-bar">
-							<div class="progress" style="width:60%;"></div>
-						</div>
-						intermediate
+				<div style="display: inline-block; padding-left:20px; padding-right: 20px;"><img src="images/gameMakerStudioIcon.png" class="circular" style="margin: 15px; max-width: 70%;" alt="" width="100">
+					<h3>GameMaker Studio</h3>
+					<div class="progress-bar">
+						<div class="progress" style="width:60%;"></div>
 					</div>
-					<div style="display: inline-block; padding-left:20px; padding-right: 20px;"><img src="images/unityIcon.png" alt="" style="margin: 15px; max-width: 70%;" width="100">
-						<h3>Unity</h3>
-						<div class="progress-bar">
-							<div class="progress" style="width:80%;"></div>
-						</div>
-						advanced
+					intermediate
+				</div>
+				<div style="display: inline-block; padding-left:20px; padding-right: 20px;"><img src="images/unityIcon.png" alt="" style="margin: 15px; max-width: 70%;" width="100">
+					<h3>Unity</h3>
+					<div class="progress-bar">
+						<div class="progress" style="width:80%;"></div>
 					</div>
-					<div style="display: inline-block; padding-left:20px; padding-right: 20px;"><img src="images/unrealIcon.png" alt="" style="margin: 15px; max-width: 70%;" width="100">
-						<h3>Unreal Engine</h3>
-						<div class="progress-bar">
-							<div class="progress" style="width:20%;"></div>
-						</div>
-						fundamental
+					advanced
+				</div>
+				<div style="display: inline-block; padding-left:20px; padding-right: 20px;"><img src="images/unrealIcon.png" alt="" style="margin: 15px; max-width: 70%;" width="100">
+					<h3>Unreal Engine</h3>
+					<div class="progress-bar">
+						<div class="progress" style="width:20%;"></div>
 					</div>
+					fundamental
+				</div>
 				<h3 style="margin-top:100px; margin-bottom:50px;">Programming Languages</h3>
 
 				<div style="display: inline-block; padding-left:20px; padding-right: 20px;">
@@ -268,6 +272,49 @@
 							A deadly fireball used to deciminate monsters and a telekinetic beam which you can use to strategically place energy
 							crystals, which in turn power magic constructs. Clever timing and resource management is the key to victory!
 						</p>
+						<a id="hide0" href="#hide0" class="hide button">show more...</a>
+						<a id="show0" href="#show0" class="show button">show less...</a>
+						<div class="details">
+							<p>
+								<br>
+								<h4>Visualizing the Telekinesis Beam</h4>
+								<br> The telekinesis spell, used to lift up the energy crystals, is visualized with a beam from the player to the
+								grabbed crystal. This beam had to be very organic - using a laser-pointer-like line felt far too stiff and undynamic.<br>								The motion of the crystal is calculated by interpolating its current position with its desired position (represented
+								by a red line in the video below).<br>
+								<br> To draw the actual beam, I made use of Unity's line renderer component (which was fortunately improved in version
+								5.5). I fueled in coordinates (displayed as white hairlines) based on a sine curve that has its x axis on the "ideal
+								ray" from player to desired position.<br>
+								<br>See it in action:
+								<table class="centered" style="width:90%;">
+									<td>
+										<video style="width:100%;" controls>
+											<source src="videos/telekinesisBeam.mp4" type="video/mp4"> Your browser does not support HTML5 playback of mp4 videos.
+										</video>
+									</td>
+								</table>
+								<br>
+								<h4>Flying dragons</h4>
+								<br> For a long time of our development process, we wanted to include dragons in our game. They were supposed to
+								fly in groups as certain fish swims in swarms.<br> To accomplish this behaviour, I wrote a simple flocking algorithm.
+								The main movement is controlled by following a predetermined, node-based path.<br>
+								<br> The final node of the path is the actual target, around which all of the dragons gather. Whenever I move the
+								target, the agents follow, always trying to keep a distance to the target-point.<br> I'm curious to experiment and
+								build upon this behaviour in the future.<br>
+								<br> You can observe it here:<br>
+								<table class="centered" style="width:100%; border-spacing: 10px; border-collapse: separate;">
+									<td style="width:50%;">
+										<video style="width:100%;" controls>
+											<source src="videos/flockAgentPaths.mp4" type="video/mp4"> Your browser does not support HTML5 playback of mp4 videos.
+										</video>
+									</td>
+									<td style="width:50%;">
+										<video style="width:100%;" controls>
+											<source src="videos/flockAgentTarget.mp4" type="video/mp4"> Your browser does not support HTML5 playback of mp4 videos.
+										</video>
+									</td>
+								</table>
+							</p>
+						</div>
 					</td>
 				</table>
 				<hr>
