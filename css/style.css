@@ -421,26 +421,26 @@ section{
     padding-left: 5%;
 }
 
-.aeronautsSlidesDots {
+.aeronautsSlidesDots, .runecastSlidesDots {
     background-color: rgba(255, 255, 255, 0.8)
 }
 
-.aeronautsSlidesDots-selected {
+.aeronautsSlidesDots-selected, .runecastSlidesDots-selected {
     background-color: #E7B53B;
 }
 
-.aeronautsSlidesDots, .aeronautsSlidesDots-selected {
+.aeronautsSlidesDots, .aeronautsSlidesDots-selected, .runecastSlidesDots, .runecastSlidesDots-selected {
     height: 13px;
     width: 13px;
     border-style: none;
     border-radius: 50%;
 }
 
-.aeronautsSlidesDots:hover {
+.aeronautsSlidesDots:hover, .runecastSlidesDots:hover {
 	cursor: pointer;
 	background-color: #E7B53B;
 }
-.aeronautsSlides p {
+.aeronautsSlides p, .runecastSlides p {
 	text-align: center;
 	
 	background-color: rgba(73, 73, 73, 0.78);
