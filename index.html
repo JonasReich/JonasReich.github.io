@@ -47,11 +47,11 @@
 					<br>Nice to see you! I’m a game design student from Munich, Germany.
 					<br>
 					<br>Since the start of my studies in 2015 I've' had a shot at almost every aspect of game-making: Game design, programming,
-					drawing, 3D-modeling, composing, you name it. Thus, whenever asked to single out one distinct dicipline, I didn't really
+					drawing, 3D-modeling, composing, you name it. Thus, whenever asked to single out one distinct dicipline, I don't really
 					know how to respond.
 					<br>
-					<br> Eventually, I took a closer look at the activities I generally succeeded in and enjoyed the best. Actually, you
-					can boil most of my work down to three common aspects:
+					<br> Lately, I've been focusing on the more technical aspects of the field - but my expertise lies somewhere between
+					programming and design. That is why I always have the following three goals in mind:
 					<ol>
 						<li>Collaborating with awesome people and assuring everybody is working towards a common goal</li>
 						<li>Solving the technical puzzles that arise with the implementation of gamedesign mechanics</li>
@@ -326,11 +326,12 @@
 								<br>
 								<h4>Visualizing the Telekinesis Beam</h4>
 								<br> The telekinesis spell, used to lift up the energy crystals, is visualized with a beam from the player to the
-								grabbed crystal. This beam had to be very organic - using a laser-pointer-like line felt far too stiff and undynamic.<br>								The motion of the crystal is calculated by interpolating its current position with its desired position (represented
-								by a red line in the video below).<br>
+								grabbed crystal. This beam had to be very organic - using a laser-pointer-like line felt far too stiff and undynamic.<br>								To solve this issue, I introduced a slight "lag", so the crystal lingers at its current position for a moment and
+								slowly approaches its destination. This movement is calculated by interpolating the current crystal position with
+								its desired position (represented by a red line in the video below).<br>
 								<br> To draw the actual beam, I made use of Unity's line renderer component (which was fortunately improved in version
 								5.5). I fueled in coordinates (displayed as white hairlines) based on a sine curve that has its x axis on the "ideal
-								ray" from player to desired position.<br>
+								ray" from the player to the desired position.<br>
 								<br>See it in action:
 								<table class="centered" style="width:90%;">
 									<td>
@@ -439,18 +440,19 @@
 								<h4>A Zen-Like Experience</h4>
 								<br> The biggest difference of Aeronauts compared to traditional strategy games is the complete absence of militarized
 								fights. There are enemy encounters on the dungeon-islands, but they are optional up to the point when you decide
-								to engage.<br> This approach creates a very calm, <b>zen-like experience</b> that focuses solely on exploration and
-								unit-management.
+								to engage.<br> This approach creates a very calm, <b>zen-like experience</b> that allows you to focus solely on exploration
+								and unit-management.
 								<br>
 								<br> One key component to achieve that goal is the resource tree which is inspired by the goods from <b>The Settlers II</b>.
-								It is a relatively peaceful game when compared to major strategie competitors such as Age of Empires, Civilisation
-								or the Anno series. The game feel is already pretty close to what we wanted to achieve for our game. However, the
-								economy of the Settlers II is still <b>centered around the military</b> which is the driving force for everything.
-								All the fortunes a player collects over the course of a game are spent to resolve military disputes. Gold coins which
-								are used to recruit and train soldiers are the most expencive good. Unfortunately there is no civil equivalent to
-								gold coins that is worth your time or resources.<br>
-								<br>In Aeronauts <b>we wanted to take a different route:</b> Our resource tree is built around <b>cloth</b> which
-								is substantial for everything else.
+								It is a relatively peaceful game compared to major strategy competitors such as Age of Empires, Civilisation or the
+								Anno series. The game feel is already pretty close to the end goal we were aiming for. However, the economy of the
+								Settlers II is still <b>centered around the military</b>, which is the driving force of every decision. All the fortunes
+								a player collects over the course of a game are spent to resolve military disputes. Gold coins which are used to
+								recruit and train soldiers are the most expencive good. Unfortunately there is no civil equivalent to gold coins
+								that is worth your time or resources.<br>
+								<br>In Aeronauts, <b>we wanted to take a different route:</b> Our resource tree is built around <b>cloth</b> which
+								is substantial for crafting tools and "breeding" new Aeronaut workers.<br> The final goal of the game is the construction
+								of a big air-ship - which again requires a lot of cloth, wood and other scarce resources.
 								<br>
 								<br>
 								<img style="box-shadow: 0 0; border: #2d2d24 1px solid; margin:0; padding: 15px;" src="images/Aeronauts/resourceTree.png"
