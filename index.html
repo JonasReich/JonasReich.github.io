@@ -330,7 +330,34 @@
 								<br> To draw the actual beam, I made use of Unity's line renderer component (which was fortunately improved in version
 								5.5). I fueled in coordinates (displayed as white hairlines) based on a sine curve that has its x axis on the "ideal
 								ray" from the player to the desired position.<br>
-								<br>See it in action:
+								<div style="display: table; table-layout:fixed;
+width: 100%;"><pre class="prettyprint lang-cs">
+void DrawBeam ()
+{
+	lineRenderer.enabled = true;
+
+	Vector3 idealBeam = telekinesisPointer.transform.position - transform.position;
+	Debug.DrawLine(transform.position, transform.position + idealBeam);
+
+	float stepLength = idealBeam.magnitude / lineRenderer.numPositions;
+	Vector3 maxOffset = grabbedCrystal.transform.position - telekinesisPointer.transform.position; // local coordinates
+	Debug.DrawLine(telekinesisPointer.transform.position, telekinesisPointer.transform.position + maxOffset);
+
+	Vector3[] positions = new Vector3[lineRenderer.numPositions];
+	for (int x = 0; x < lineRenderer.numPositions; x++)
+	{
+		Vector3 tempPos = transform.position + idealBeam.normalized * stepLength * x; // global coordinates
+	
+		float y = Mathf.Pow((x / (float)(lineRenderer.numPositions)), 2);
+		Vector3 offset = maxOffset * y;
+		Debug.DrawLine(tempPos, tempPos + offset);
+	
+		positions[x] = tempPos + offset;
+	}
+
+	lineRenderer.SetPositions(positions);
+}								</pre></div>
+								See it in action:
 								<table class="centered" style="width:90%;">
 									<td>
 										<video style="width:100%;" controls>
