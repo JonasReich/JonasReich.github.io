@@ -330,8 +330,7 @@
 								<br> To draw the actual beam, I made use of Unity's line renderer component (which was fortunately improved in version
 								5.5). I fueled in coordinates (displayed as white hairlines) based on a sine curve that has its x axis on the "ideal
 								ray" from the player to the desired position.<br>
-								<div style="display: table; table-layout:fixed;
-width: 100%;"><pre class="prettyprint lang-cs">
+								<div style="display: table; table-layout:fixed; width: 100%;"><pre class="prettyprint lang-cs">
 void DrawBeam ()
 {
 	lineRenderer.enabled = true;
@@ -373,7 +372,82 @@ void DrawBeam ()
 								<br> The final node of the path is the actual target, around which all of the dragons gather. Whenever I move the
 								target, the agents follow, always trying to keep a distance to the target-point.<br> I'm curious to experiment and
 								build upon this behaviour in the future.<br>
-								<br> You can observe it here:<br>
+								<div style="display: table; table-layout:fixed; width: 100%;"><pre class="prettyprint lang-cs">
+void Move()
+{
+	steering = Vector3.zero;
+	var _position = transform.position;
+
+	// follow a target/path
+	var _targetPosition = targetTransform.position;
+	var _distanceToNextTarget = Vector3.Distance(_position, _targetPosition);
+
+	var _desiredVelocity = (_targetPosition - _position).normalized * maxSpeed;
+	var _followForce = (2*_desiredVelocity + Velocity).normalized * followForceFactor;
+
+	steering += _followForce;
+	Debug.DrawLine(_position, _position + _followForce, Color.yellow);
+	
+	// avoide obstacles
+	var _view_ahead = _position + Velocity.normalized * detectionDistance;
+	var _mostThreatening = FindMostThreateningObstacle(_view_ahead, _view_ahead / 2);
+
+	if (_mostThreatening != null)
+	{
+		var _avoidanceForce = _view_ahead - _mostThreatening.transform.position;
+		_avoidanceForce *= avoidanceForceFactor;
+		steering += _avoidanceForce;
+		Debug.DrawLine(_position, _position + _avoidanceForce, Color.red);
+	}
+
+	// align with other flockagents
+	if (flockAgentPool.Count > 0)
+	{
+		var _neighbourCount = 0;
+		var _alignmentForce = Vector3.zero;
+		var _cohesionForce = Vector3.zero;
+
+		foreach (var enemy in flockAgentPool)
+		{
+			var _agent = enemy.FlockAgent;
+			if (_agent != this && Vector3.Distance(_position, _agent.transform.position) < agentRadius)
+			{
+				_neighbourCount++;
+				_alignmentForce += _agent.Velocity;
+				_cohesionForce += _agent.transform.position;
+			}
+		}
+
+		_cohesionForce /= _neighbourCount;
+		_cohesionForce -= _position;
+
+		_alignmentForce.Normalize();
+		_cohesionForce.Normalize();
+
+		var _separationForce = -2 * _cohesionForce * separationForceFactor;
+		_cohesionForce *= cohesionForceFactor;
+		_alignmentForce *= alignmentForceFactor;
+
+		steering += _separationForce + _cohesionForce + _alignmentForce;
+		Debug.DrawLine(_position, _position + _separationForce, Color.cyan);
+	}
+
+	// apply forces
+	steering = Vector3.ClampMagnitude(steering, maxForce);
+	steering /= steeringMass;
+
+	Velocity += steering * Time.deltaTime;
+	Velocity = Vector3.ClampMagnitude((Velocity), maxSpeed);
+	transform.position += Velocity * Time.deltaTime;
+
+	Debug.DrawLine(transform.position, transform.position + Velocity);
+
+	// rotate according to Velocity
+	var _rotationDelta = transform.rotation;
+	_rotationDelta.SetLookRotation(_desiredVelocity);
+	transform.rotation = _rotationDelta;
+}								</pre></div>
+								You can observe it here:<br>
 								<table class="centered" style="width:100%; border-spacing: 10px; border-collapse: separate;">
 									<td style="width:50%;">
 										<video style="width:100%;" controls>
