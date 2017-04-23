@@ -320,15 +320,17 @@
 						<div class="details">
 							<p>
 								<br>
-								<h4>Visualizing the Telekinesis Beam</h4>
-								<br> The telekinesis spell, used to lift up the energy crystals, is visualized with a beam from the player to the
+								<h4>Visualizing the Telekinesis Beam</h4><br>
+								<img src="gifs/telekineticBeam.gif" alt=""><br>
+								The telekinesis spell, used to lift up the energy crystals, is visualized with a beam from the player to the
 								grabbed crystal. This beam had to be very organic - using a laser-pointer-like line felt far too stiff and undynamic.<br>								To solve this issue, I introduced a slight "lag", so the crystal lingers at its current position for a moment and
 								slowly approaches its destination. This movement is calculated by interpolating the current crystal position with
-								its desired position (represented by a red line in the video below).<br>
+								its desired position (represented by a red line in the gif above).<br>
 								<br> To draw the actual beam, I made use of Unity's line renderer component (which was fortunately improved in version
 								5.5). I fueled in coordinates (displayed as white hairlines) based on a sine curve that has its x axis on the "ideal
-								ray" from the player to the desired position.<br>
-								<div style="display: table; table-layout:fixed; width: 100%;"><pre class="prettyprint lang-cs">
+								ray" from the player to the desired position.
+								<div style="display: table; table-layout:fixed; width: 100%;">
+									<pre class="prettyprint lang-cs">
 void DrawBeam ()
 {
 	lineRenderer.enabled = true;
@@ -353,24 +355,21 @@ void DrawBeam ()
 	}
 
 	lineRenderer.SetPositions(positions);
-}								</pre></div>
-								See it in action:
-								<table class="centered" style="width:90%;">
-									<td>
-										<video style="width:100%;" controls>
-											<source src="videos/telekinesisBeam.mp4" type="video/mp4"> Your browser does not support HTML5 playback of mp4 videos.
-										</video>
-									</td>
-								</table>
-								<br>
+}								</pre>
+								</div>
+								<br><br>
 								<h4>Flying dragons</h4>
-								<br> For a long time of our development process, we wanted to include dragons in our game. They were supposed to
+								<br>
+								<img src="gifs/flockPath.gif" alt=""><br>
+								For a long time of our development process, we wanted to include dragons in our game. They were supposed to
 								fly in groups as certain fish swims in swarms.<br> To accomplish this behaviour, I wrote a simple flocking algorithm.
-								The main movement is controlled by following a predetermined, node-based path.<br>
+								The main movement is controlled by following a predetermined, node-based path.<br><br>
+								<img src="gifs/flockTarget.gif" alt="">
 								<br> The final node of the path is the actual target, around which all of the dragons gather. Whenever I move the
 								target, the agents follow, always trying to keep a distance to the target-point.<br> I'm curious to experiment and
 								build upon this behaviour in the future.<br>
-								<div style="display: table; table-layout:fixed; width: 100%;"><pre class="prettyprint lang-cs">
+								<div style="display: table; table-layout:fixed; width: 100%;">
+									<pre class="prettyprint lang-cs">
 void Move()
 {
 	steering = Vector3.zero;
@@ -444,20 +443,8 @@ void Move()
 	var _rotationDelta = transform.rotation;
 	_rotationDelta.SetLookRotation(_desiredVelocity);
 	transform.rotation = _rotationDelta;
-}								</pre></div>
-								You can observe it here:<br>
-								<table class="centered" style="width:100%; border-spacing: 10px; border-collapse: separate;">
-									<td style="width:50%;">
-										<video style="width:100%;" controls>
-											<source src="videos/flockAgentPaths.mp4" type="video/mp4"> Your browser does not support HTML5 playback of mp4 videos.
-										</video>
-									</td>
-									<td style="width:50%;">
-										<video style="width:100%;" controls>
-											<source src="videos/flockAgentTarget.mp4" type="video/mp4"> Your browser does not support HTML5 playback of mp4 videos.
-										</video>
-									</td>
-								</table>
+}								</pre>
+								</div>
 							</p>
 						</div>
 					</td>
@@ -672,4 +659,5 @@ void Move()
 </body>
 
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
 </html>
