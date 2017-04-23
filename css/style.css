@@ -250,22 +250,22 @@ section{
 	border-radius: 50%;
 }
 
-#projects hr {
+#games hr {
 	margin-top: 50px; margin-bottom:50px; width: 30%;
 }
 
-#projects td {
+#games td {
 	display: table-cell;
 	vertical-align: top;
 	width: 20%;
 }
 
-#projects td ~ td {
+#games td ~ td {
 	display: unset;
 	width: auto;
 }
 
-#projects td img {
+#games td img {
 	width: 90%;
 	margin-bottom: 30px;
 }
@@ -467,7 +467,7 @@ time {
 	font-style: italic;
 }
 
-section#projects time {
+section#games time {
 	float: right;
 }
 
