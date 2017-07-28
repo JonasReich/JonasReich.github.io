@@ -1,0 +1,125 @@
+{
+    "List": [
+        {
+            "Spacer": ""
+        },
+        {
+            "Text": "Credits Downloader Plugin"
+        },
+        {
+            "Spacer": ""
+        },
+        {
+            "List": [
+                {
+                    "Text": "Technical Director"
+                },
+                {
+                    "List": [
+                        {
+                            "Text": "Lukas Lang"
+                        }
+                    ]
+                },
+                {
+                    "Spacer": ""
+                },
+                {
+                    "Text": "Supervising Technical Lead"
+                },
+                {
+                    "List": [
+                        {
+                            "Text": "Okan Agca"
+                        }
+                    ]
+                },
+                {
+                    "Spacer": ""
+                },
+                {
+                    "Text": "Programmers"
+                },
+                {
+                    "List": [
+                        {
+                            "Text": "Philipp Brasin"
+                        },
+                        {
+                            "Text": "Jonas Reich"
+                        }
+                    ]
+                },
+                {
+                    "Spacer": ""
+                },
+                {
+                    "Spacer": ""
+                },
+                {
+                    "Text": "More Stuff to showcase Credit Scrolling..."
+                },
+                {
+                    "List": [
+                        {
+                            "Text": "John Doe"
+                        },
+                        {
+                            "Text": "Jane Doe"
+                        },
+                        {
+                            "Text": "John Doe"
+                        }
+                    ]
+                },
+                {
+                    "Spacer": ""
+                },
+                {
+                    "Text": "...and waste time..."
+                },
+                {
+                    "List": [
+                        {
+                            "Text": "Jane Doe"
+                        },
+                        {
+                            "Text": "John Doe"
+                        },
+                        {
+                            "Text": "Jane Doe"
+                        }
+                    ]
+                },
+                {
+                    "Spacer": ""
+                },
+                {
+                    "Text": "...as well as space."
+                },
+                {
+                    "List": [
+                        {
+                            "Text": "Jane Jane"
+                        },
+                        {
+                            "Text": "John John"
+                        },
+                        {
+                            "Text": "Doe Doe"
+                        }
+                    ]
+                },
+                {
+                    "Spacer": ""
+                }
+            ]
+        },
+        {
+            "Spacer": ""
+        },
+        {
+            "Spacer": ""
+        }
+    ]
+}
