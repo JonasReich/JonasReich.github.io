@@ -187,7 +187,7 @@ img, .progress-bar {
 	max-width: 100%;
 }
 
-.timeline img, #about-me img, #skills img {
+.line img, #about-me img, #skills img {
 	box-shadow: 0px 0px 0px;
 }
 
@@ -278,15 +278,15 @@ section{
 
 
 /*-----------------------*/
-/* ------ TIMELINE ------*/
+/* ------ LINE ------*/
 /*-----------------------*/
 
-.timeline {
+.line {
 	position: relative;
 	overflow: auto;
 }
   
-.timeline h3 {
+.line h3 {
 	background: white;
 	max-width: 6em;
 	margin: 1em auto 1em;
@@ -297,13 +297,13 @@ section{
 	border: 2px #7D4071 solid;
 }
   
-.timeline > ul {
+.line > ul {
 	list-style: none;
 	padding: 0 1em 0 1em;
 	z-index: 1;
 }
   
-.timeline > ul > li {
+.line > ul > li {
 	background: white;
 	padding: 1em;
 	margin-bottom: 1em;
@@ -313,7 +313,7 @@ section{
 	box-shadow: 2px 2px 5px #888888;
 }
 
-.timeline:before {
+.line:before {
 	content: '';
 	width: 0;
 	height: 0;
@@ -322,31 +322,31 @@ section{
 }
   
   
-.timeline h4 {
+.line h4 {
 	margin-top: 0;
 }
 
 
 @media screen and (min-width: 40em) {
 	
-	.timeline:before {
+	.line:before {
     	background: #7D4071;
 		left: 50%;
 		height: 100%;
 		width: 2px;
 	}
 	
-	.timeline > ul {
+	.line > ul {
 		padding-left: 0;
 		max-width: 100%;
 		padding: 0;
 	}
 	
-	.timeline > ul > li {
+	.line > ul > li {
 		width: 42%;
 	}
 	
-	.timeline > ul > li:nth-child(even) {
+	.line > ul > li:nth-child(even) {
 		float: right;
 		margin-top: 2em;
 
@@ -354,13 +354,13 @@ section{
 		margin-right:5px;
 	}
 	
-	.timeline > ul > li:nth-child(odd) {
+	.line > ul > li:nth-child(odd) {
 		float: left;
 
 		margin-left:5px;
 	}
 
-	.timeline > ul > li:nth-child(odd):before {
+	.line > ul > li:nth-child(odd):before {
 		border-top: 1em solid #7D4071;
 		border-right: 1em solid transparent;
 		border-left: 1em;
@@ -368,7 +368,7 @@ section{
 		left: auto;
 	}
 
-	.timeline > ul > li:before {
+	.line > ul > li:before {
     	content: '';
     	width: 0;
     	height: 0;
@@ -378,7 +378,7 @@ section{
     	left: -1em;
 	}
 	
-	.timeline > ul > li:nth-of-type(2n+1) {
+	.line > ul > li:nth-of-type(2n+1) {
 		clear: both;
 	}
 }
@@ -468,12 +468,15 @@ section{
 	margin-top: 30px; margin-bottom: 30px;
 }
 
-time {
+section#games time {
+	float: right;
 	font-style: italic;
 }
 
-section#games time {
-	float: right;
+section#games time::before {
+	display: inline-block;
+	content: url("../images/calendar.svg");
+	margin-right: 10px;
 }
 
 /****/
