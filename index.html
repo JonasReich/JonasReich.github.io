@@ -252,10 +252,10 @@
 					<h2>Games</h2>
 				</header>
 				<table id="runecast-defender">
-					<td>
+					<td class="aside">
 						<img src="images/runecastIconBackdrop.png" alt="">
 						<a class="button-container" href="https://bitbucket.org/spellfish/runecast-defender">
-							<div class="button"><img src="images/logos/bitbucket.png" style="margin:0px; box-shadow: 0 0;" alt=""></div>
+							<div class="button"><img src="images/logos/bitbucket.png" style="max-width:90%; box-shadow: 0 0;" alt=""></div>
 						</a>
 					</td>
 					<td>
@@ -323,13 +323,10 @@
 								<script src="scripts/slides.js"></script>
 							</td>
 						</table>
-						<a id="hide0" href="#hide0" class="hide button">show more...</a>
-						<a id="show0" href="#show0" class="show button">show less...</a>
+						<div class="button" onclick="toggle_details(this);">show more...</div>
 						<div class="details">
-							<p>
-								<br>
-								<h4>Visualizing the Telekinesis Beam</h4><br>
-								<img src="gifs/telekineticBeam.gif" alt=""><br>
+								<h4>Visualizing the Telekinesis Beam</h4>
+								<img src="gifs/telekineticBeam.gif" alt="">
 								The telekinesis spell, used to lift up the energy crystals, is visualized with a beam from the player to the
 								grabbed crystal. This beam had to be very organic - using a laser-pointer-like line felt far too stiff and undynamic.<br>								To solve this issue, I introduced a slight "lag", so the crystal lingers at its current position for a moment and
 								slowly approaches its destination. This movement is calculated by interpolating the current crystal position with
@@ -365,15 +362,14 @@ void DrawBeam ()
 	lineRenderer.SetPositions(positions);
 }								</pre>
 								</div>
-								<br><br>
-								<h4>Flying dragons</h4>
 								<br>
-								<img src="gifs/flockPath.gif" alt=""><br>
+								<h4>Flying dragons</h4>
+								<img src="gifs/flockPath.gif" alt="">
 								For a long time of our development process, we wanted to include dragons in our game. They were supposed to
 								fly in groups as certain fish swims in swarms.<br> To accomplish this behaviour, I wrote a simple flocking algorithm.
-								The main movement is controlled by following a predetermined, node-based path.<br><br>
+								The main movement is controlled by following a predetermined, node-based path.
 								<img src="gifs/flockTarget.gif" alt="">
-								<br> The final node of the path is the actual target, around which all of the dragons gather. Whenever I move the
+								The final node of the path is the actual target, around which all of the dragons gather. Whenever I move the
 								target, the agents follow, always trying to keep a distance to the target-point.<br> I'm curious to experiment and
 								build upon this behaviour in the future.<br>
 								<div style="display: table; table-layout:fixed; width: 100%;">
@@ -453,13 +449,12 @@ void Move()
 	transform.rotation = _rotationDelta;
 }								</pre>
 								</div>
-							</p>
 						</div>
 					</td>
 				</table>
 				<hr>
 				<table id="aeronauts">
-					<td>
+					<td class="aside">
 						<img src="images/Aeronauts/AeronautsIcon.png" alt="">
 					</td>
 					<td>
@@ -524,11 +519,8 @@ void Move()
 								<script src="scripts/slides.js"></script>
 							</td>
 						</table>
-						<a id="hide1" href="#hide1" class="hide button">show more...</a>
-						<a id="show1" href="#show1" class="show button">show less...</a>
+						<div class="button" onclick="toggle_details(this);">show more...</div>
 						<div class="details">
-							<p>
-								<br>
 								<h4>A Zen-Like Experience</h4>
 								<br> The biggest difference of Aeronauts compared to traditional strategy games is the complete absence of militarized
 								fights. There are enemy encounters on the dungeon-islands, but they are optional up to the point when you decide
@@ -547,8 +539,9 @@ void Move()
 								of a big air-ship - which again requires a lot of cloth, wood and other scarce resources.
 								<br>
 								<br>
-								<img style="box-shadow: 0 0; border: #2d2d24 1px solid; margin:0; padding: 15px;" src="images/Aeronauts/resourceTree.png"
-								 alt=""><br>
+								<div style="border: #2d2d24 1px solid; padding: 15px; max-width: 100%; background:white; box-shadow: 0px 2px 5px #888888;">
+									<img style="box-shadow: 0 0; margin:0;" src="images/Aeronauts/resourceTree.png" alt="">
+								</div>
 								<!--
 								<br>You can collect wood, stone and single food pickups on the Main Island (the one where you start the game and
 								build all your buildings) and survive for a couple of years. You should not be fooled though: You have to consume
@@ -621,5 +614,15 @@ void Move()
 </body>
 
 <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+<script>
+	function toggle_details(target)
+	{
+		//target.classList.toggle("active"); // add active class
+		var shouldBeVisible = !(target.nextElementSibling.style.display === "block");
+		target.innerHTML = shouldBeVisible ? "show less..." : "show more...";
+		target.nextElementSibling.style.display = shouldBeVisible ? "block" : "none";
+	}
+</script>
 
 </html>

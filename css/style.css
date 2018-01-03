@@ -184,6 +184,7 @@ a.button-container {
 
 img, .progress-bar {
 	box-shadow: 2px 2px 5px #888888;
+	max-width: 100%;
 }
 
 .timeline img, #about-me img, #skills img {
@@ -191,7 +192,6 @@ img, .progress-bar {
 }
 
 div.button {
-	width: 90%;
 	text-align: center;
 	padding: 15px 0px 15px 0px;
 
@@ -208,7 +208,7 @@ a.button:hover, div.button:hover {
 }
 
 .section-spacer  {
-	height: 50px;
+	/*height: 50px;*/
 }
 
 .center-wrapper {
@@ -235,6 +235,7 @@ section{
 	text-align: center;
 	border-top: 1px solid;
 	border-color: rgba(125, 64, 113, 0.5);
+	padding-bottom: 50px;
 }
 
 .container {
@@ -251,25 +252,29 @@ section{
 }
 
 #games hr {
-	margin-top: 50px; margin-bottom:50px; width: 30%;
+	margin-top: 50px; margin-bottom:50px;
 }
 
-#games td {
+/* sidebar = logo + links*/
+
+#games td.aside {
 	display: table-cell;
 	vertical-align: top;
 	width: 20%;
+	padding-right: 30px;
 }
+
+#games td.aside > * {
+	max-width: 100%;
+	margin-bottom: 30px;
+}
+
+/* 2nd column = main content */
 
 #games td ~ td {
 	display: unset;
 	width: auto;
 }
-
-#games td img {
-	width: 90%;
-	margin-bottom: 30px;
-}
-
 
 
 /*-----------------------*/
@@ -500,9 +505,13 @@ section#games time {
 	-webkit-transition: background .25s ease-in-out, color .25s ease-in-out;
 }
 
+.button:hover {
+	cursor: pointer;
+}
 
 :any-link:hover {
 	color:#E7B53B;
+	cursor: pointer;
 }
 
 a:hover {
@@ -513,6 +522,16 @@ a:hover {
 /*------ COLLAPSE -------*/
 /*-----------------------*/
 
+.details {
+	display: none;
+	background: linear-gradient(rgba(125, 64, 113, 0.2) 0px, rgba(125, 64, 113, 0.1) 325px);
+	padding: 30px;
+}
+
+.details img {
+	margin-top: 30px; margin-bottom: 30px;
+}
+/*
 .details,
 .show,
 .hide:target {
@@ -540,6 +559,7 @@ a.hide {
 	background-color: #E7B53B;
 	color: #2D2D24;
 }
+*/
 
 /*-----------------------*/
 /*---- CODE SAMPLES -----*/
