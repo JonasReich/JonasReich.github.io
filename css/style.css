@@ -485,17 +485,17 @@ pre {
 
 	margin: 0 auto;
 	margin-bottom: 30px;
+	text-align: center;
 }
 
 .slides-arrow {
-    position: absolute;
+	display: inline;
+
     padding-right: 5%;
     padding-left: 5%;
-    top: 50%;
-    transform: translate(0%, -50%);
     padding-bottom: 5%;
 	padding-top: 5%;
-	
+
     font-weight: 700;
     font-size: 20px;
 }
@@ -506,7 +506,7 @@ pre {
 }
 
 .slides-arrow.right {
-    right: 0px;
+	right: 0px;
 }
 
 .slides-arrow.left {
@@ -557,7 +557,7 @@ aspect ratio  | padding-bottom value
 
 .slide-dots{
 	height: 30px;
-	display: flex;
+	display: inline-flex;
 	align-items: center;
 	justify-content: center;
 }
