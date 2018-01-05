@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Jonas Reich - Portfolio</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/style.css" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
+
+	<link rel="icon" href="images/jonasreich_avatar_icon.png">
+</head>
+
+<body>
+	<div id="main-menu" style="position: fixed; top: 0px; width: 100%; z-index: 1000; left:0px;">
+		<nav>
+			<a href="#" id="menu-icon">
+				<!--Three divs for the 'burger' bars-->
+				<div></div>
+				<div></div>
+				<div></div>
+			</a>
+			<ul>
+				<li>
+					<a class="button" href="#">About Me</a>
+				</li>
+				<li>
+					<a class="button" href="#skills">Skills</a>
+				</li>
+				<!--<li><a class="button" href="#career">Career</a></li>-->
+				<li>
+					<a class="button" href="#games">Games</a>
+				</li>
+				<li>
+					<a class="button" href="#contact">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+	<header id="page-title">
+		<h1>Jonas Reich</h1>
+		Game Design Student & Developer
+	</header>
+	<main>
+		<section id="about-me">
+			<div class="container">
+				
+			</div>
+		</section>
+	</main>
+	<footer style="background-color: #7D4071; height: 100px;">
+	</footer>
+</body>
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+<script>
+	function toggle_details(target) {
+		//target.classList.toggle("active"); // add active class
+		var shouldBeVisible = !(target.nextElementSibling.style.display === "block");
+		target.innerHTML = shouldBeVisible ? "show less..." : "show more...";
+		target.nextElementSibling.style.display = shouldBeVisible ? "block" : "none";
+	}
+</script>
+
+</html>
