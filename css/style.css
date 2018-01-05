@@ -409,8 +409,8 @@ section#games time::before {
 	height: 10px;
 }
 
-@media only screen and (max-width : 640px) {
-
+.progress-bar-caption {
+	margin-bottom: 30px;
 }
 
 /*-----------------------*/
@@ -612,3 +612,49 @@ aspect ratio  | padding-bottom value
 .slide-root {
 	box-shadow: 0px 2px 5px black;
 }
+
+/*-----------------------*/
+/*------- SKILLS --------*/
+/*-----------------------*/
+
+#skills img, #skills svg {
+	margin: 15px;
+	max-width: 70%;
+	width: 100px;
+}
+
+#skills .container {
+	max-width: 100%;
+	text-align: center;
+}
+
+#skills .container > div {
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#skills h3 {
+	margin-bottom: 50px;
+}
+
+#skills h3 ~ h3 {
+	margin-top: 100px;
+}
+
+/* expertiese levels: */
+
+.progress-bar.fundamental .progress { width: 20%; }
+.progress-bar.fundamental + .progress-bar-caption::after { content: "fundamental"; }
+
+.progress-bar.basic .progress {	width: 40%;}
+.progress-bar.basic + .progress-bar-caption::after { content: "basic"; }
+
+.progress-bar.intermediate .progress {	width: 60%;}
+.progress-bar.intermediate + .progress-bar-caption::after { content: "intermediate"; }
+
+.progress-bar.advanced .progress { width: 80%; }
+.progress-bar.advanced + .progress-bar-caption::after { content: "advanced"; }
+
+.progress-bar.expert .progress {	width: 100%;}
+.progress-bar.expert + .progress-bar-caption::after { content: "expert"; }
