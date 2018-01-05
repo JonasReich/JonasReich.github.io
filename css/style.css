@@ -442,42 +442,13 @@ a:hover {
 
 .details {
 	display: none;
-	background: linear-gradient(rgba(125, 64, 113, 0.2) 0px, rgba(125, 64, 113, 0.1) 325px);
+	box-shadow: 0px 0px 10px 0px #00000054;
 	padding: 30px;
 }
 
 .details img {
 	margin-top: 30px; margin-bottom: 30px;
 }
-/*
-.details,
-.show,
-.hide:target {
-  display: none;
-}
-.hide:target + .show,
-.hide:target ~ .details {
-  display: block;
-}
-
-a.hide {
-	padding-left: 0px;
-	padding-right: 0px;
-	display: block;
-}
-
-.hide.button, .show.button {
-	border: 1px #7D4071 solid;
-	background-color: transparent;
-	color: #2D2D24;
-	box-shadow: 0px 2px 5px #888888;
-}
-
-.hide.button:hover, .show.button:hover {
-	background-color: #E7B53B;
-	color: #2D2D24;
-}
-*/
 
 /*-----------------------*/
 /*---- CODE SAMPLES -----*/
@@ -497,7 +468,7 @@ pre {
 /*------- SLIDES --------*/
 /*-----------------------*/
 
-.slides-bar-anchor {
+.slidesanchor {
     position:relative;
     width:100%;
 	text-align: center;
@@ -513,6 +484,7 @@ pre {
     padding-top: 5px;
 
 	margin: 0 auto;
+	margin-bottom: 30px;
 }
 
 .slides-arrow {
