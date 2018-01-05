@@ -4,19 +4,17 @@ Australium gold: #E7B53B
 After eight: #2D2D24
 */
 
-html, body{
+html, body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	text-align: left;
 	background-color: white;
 	color: #2D2D24;
-
-	height:100%;
+	height: 100%;
 	width: 100%;
 	margin: 0;
 	padding: 0;
 	border: 0;
-
 }
 
 body {
@@ -26,12 +24,11 @@ body {
 }
 
 header {
-	display:block;
-    color: #7D4071;
-    text-align: center;
-    padding-top: 30px;
+	display: block;
+	color: #7D4071;
+	text-align: center;
+	padding-top: 30px;
 	padding-bottom: 60px;
-	
 }
 
 header :any-link {
@@ -54,7 +51,7 @@ hr {
 	border: 0;
 }
 
-header h1, header h2, header h3, header h4, header h5, header h6{
+header h1, header h2, header h3, header h4, header h5, header h6 {
 	font-size: 250%;
 	font-weight: 400;
 	text-align: center;
@@ -66,7 +63,7 @@ table, tr, td, tbody {
 }
 
 main {
-    margin: 0px auto;
+	margin: 0px auto;
 	width: 100%;
 	/*spacer*/
 	min-height: 1000px;
@@ -80,7 +77,7 @@ a, a:visited {
 	color: #7D4071;
 }
 
-#page-title{
+#page-title {
 	margin-top: 50px;
 	padding: 50px;
 }
@@ -92,10 +89,8 @@ a, a:visited {
 	top: 0px;
 	width: 100%;
 	z-index: 1000;
-	left:0px;
-
+	left: 0px;
 	box-shadow: 0px 2px 5px black;
-	
 	z-index: 100;
 }
 
@@ -105,7 +100,6 @@ a, a:visited {
 
 #menu-icon {
 	position: absolute;
-
 	display: none;
 	width: 30px;
 	height: 30px;
@@ -114,29 +108,26 @@ a, a:visited {
 }
 
 div.button, a.button {
-	color:white;
+	color: white;
 	text-decoration: none;
 	background-color: #7D4071;
 	text-align: center;
 	padding: 15px 30px 15px 30px;
 }
 
-@media only screen and (max-width : 640px) {
+@media only screen and (max-width: 640px) {
 	#main-menu {
 		padding-bottom: 15px;
 	}
-	
 	#menu-icon {
-		display:inline-block;
+		display: inline-block;
 	}
-
 	#menu-icon div {
 		width: 30px;
 		height: 5px;
 		background-color: white;
 		margin: 6px 0;
 	}
-
 	#main-menu li {
 		display: inline-block;
 		float: left;
@@ -146,29 +137,23 @@ div.button, a.button {
 		float: none;
 	}
 	nav li {
-
 		text-align: center;
 		width: 100%;
 		height: 100%;
 		background: #7D4071;
 	}
-
-	nav ul, nav:active ul { 
-
+	nav ul, nav:active ul {
 		display: none;
 		position: absolute;
 		padding: 0px;
 		right: 0px;
 		top: 0px;
 		width: 200px;
-
 		box-shadow: 0px 2px 5px black;
 	}
-
-	nav:hover ul{
+	nav:hover ul {
 		display: block;
 	}
-
 	#main-menu div.button, #main-menu a.button {
 		padding: 0px;
 		padding-top: 15px;
@@ -194,7 +179,6 @@ img, .progress-bar {
 div.button {
 	text-align: center;
 	padding: 15px 0px 15px 0px;
-
 	background-color: white;
 	border: 1px solid #7D4071;
 	color: #7D4071;
@@ -207,28 +191,30 @@ a.button:hover, div.button:hover {
 	text-decoration: none;
 }
 
-.section-spacer  {
+.section-spacer {
 	/*height: 50px;*/
 }
 
 .center-wrapper {
-   height:100%;
-   width: 100%;
-   margin: 0;
-   padding: 0;
-   border: 0;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
 }
+
 .center-wrapper td {
-   vertical-align: middle;
-   text-align: center;
+	vertical-align: middle;
+	text-align: center;
 }
+
 table.centered {
 	width: 100%;
 	margin-top: 30px;
 	max-width: 100%;
 }
 
-section{
+section {
 	min-height: 325px;
 	background: linear-gradient(rgba(125, 64, 113, 0.1) 0px, white 325px);
 	width: 100%;
@@ -246,13 +232,13 @@ section{
 	margin: 0 auto;
 }
 
-
 .circular {
 	border-radius: 50%;
 }
 
 #games hr {
-	margin-top: 50px; margin-bottom:50px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 /* sidebar = logo + links*/
@@ -264,28 +250,29 @@ section{
 	padding-right: 30px;
 }
 
-#games td.aside > * {
+#games td.aside>* {
 	max-width: 100%;
 	margin-bottom: 30px;
 }
 
 /* 2nd column = main content */
 
-#games td ~ td {
+#games td~td {
 	display: unset;
 	width: auto;
 }
 
-
 /*-----------------------*/
+
 /* ------ LINE ------*/
+
 /*-----------------------*/
 
 .line {
 	position: relative;
 	overflow: auto;
 }
-  
+
 .line h3 {
 	background: white;
 	max-width: 6em;
@@ -296,20 +283,19 @@ section{
 	clear: both;
 	border: 2px #7D4071 solid;
 }
-  
-.line > ul {
+
+.line>ul {
 	list-style: none;
 	padding: 0 1em 0 1em;
 	z-index: 1;
 }
-  
-.line > ul > li {
+
+.line>ul>li {
 	background: white;
 	padding: 1em;
 	margin-bottom: 1em;
 	position: relative;
 	border: 2px #7D4071 solid;
-	
 	box-shadow: 2px 2px 5px #888888;
 }
 
@@ -320,65 +306,53 @@ section{
 	position: absolute;
 	left: -1em;
 }
-  
-  
+
 .line h4 {
 	margin-top: 0;
 }
 
-
 @media screen and (min-width: 40em) {
-	
 	.line:before {
-    	background: #7D4071;
+		background: #7D4071;
 		left: 50%;
 		height: 100%;
 		width: 2px;
 	}
-	
-	.line > ul {
+	.line>ul {
 		padding-left: 0;
 		max-width: 100%;
 		padding: 0;
 	}
-	
-	.line > ul > li {
+	.line>ul>li {
 		width: 42%;
 	}
-	
-	.line > ul > li:nth-child(even) {
+	.line>ul>li:nth-child(even) {
 		float: right;
 		margin-top: 2em;
-
 		/*box shadow margin*/
-		margin-right:5px;
+		margin-right: 5px;
 	}
-	
-	.line > ul > li:nth-child(odd) {
+	.line>ul>li:nth-child(odd) {
 		float: left;
-
-		margin-left:5px;
+		margin-left: 5px;
 	}
-
-	.line > ul > li:nth-child(odd):before {
+	.line>ul>li:nth-child(odd):before {
 		border-top: 1em solid #7D4071;
 		border-right: 1em solid transparent;
 		border-left: 1em;
 		right: -1em;
 		left: auto;
 	}
-
-	.line > ul > li:before {
-    	content: '';
-    	width: 0;
-    	height: 0;
-    	border-top: 1em solid #7D4071;
-    	border-left: 1em solid transparent;
-    	position: absolute;
-    	left: -1em;
+	.line>ul>li:before {
+		content: '';
+		width: 0;
+		height: 0;
+		border-top: 1em solid #7D4071;
+		border-left: 1em solid transparent;
+		position: absolute;
+		left: -1em;
 	}
-	
-	.line > ul > li:nth-of-type(2n+1) {
+	.line>ul>li:nth-of-type(2n+1) {
 		clear: both;
 	}
 }
@@ -414,7 +388,9 @@ section#games time::before {
 }
 
 /*-----------------------*/
+
 /*-------- FADE ---------*/
+
 /*-----------------------*/
 
 .button, .fade {
@@ -428,16 +404,18 @@ section#games time::before {
 }
 
 :any-link:hover {
-	color:#E7B53B;
+	color: #E7B53B;
 	cursor: pointer;
 }
 
 a:hover {
-	color:#E7B53B;
+	color: #E7B53B;
 }
 
 /*-----------------------*/
+
 /*------ COLLAPSE -------*/
+
 /*-----------------------*/
 
 .details {
@@ -447,30 +425,35 @@ a:hover {
 }
 
 .details img {
-	margin-top: 30px; margin-bottom: 30px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 /*-----------------------*/
+
 /*---- CODE SAMPLES -----*/
+
 /*-----------------------*/
 
 pre {
-    overflow: auto; 
-	-moz-tab-size: 4; /* Code for Firefox */
-	-o-tab-size: 4; /* Code for Opera 10.6-12.1 */
+	overflow: auto;
+	-moz-tab-size: 4;
+	/* Code for Firefox */
+	-o-tab-size: 4;
+	/* Code for Opera 10.6-12.1 */
 	tab-size: 4;
-
 	max-height: 500px;
 }
 
-
 /*-----------------------*/
+
 /*------- SLIDES --------*/
+
 /*-----------------------*/
 
 .slidesanchor {
-  position:relative;
-  width:100%;
+	position: relative;
+	width: 100%;
 	text-align: center;
 	margin-bottom: 30px;
 	box-shadow: 0px -5px 5px -2px #000000c7;
@@ -478,11 +461,9 @@ pre {
 
 .slides-bar {
 	color: white;
-   background-color: #000000ad;
-
+	background-color: #000000ad;
 	padding-bottom: 5px;
-    padding-top: 5px;
-
+	padding-top: 5px;
 	margin: 0 auto;
 	margin-bottom: 30px;
 	text-align: center;
@@ -490,21 +471,19 @@ pre {
 
 .slides-arrow {
 	display: inline;
-
-    padding-right: 5%;
-    padding-left: 5%;
-
-    font-weight: 700;
-    font-size: 20px;
+	padding-right: 5%;
+	padding-left: 5%;
+	font-weight: 700;
+	font-size: 20px;
 }
 
 .slides-arrow:hover {
-    cursor: pointer;
-    color: #E7B53B;
+	cursor: pointer;
+	color: #E7B53B;
 }
 
 .slides-arrow.right {
-	float:right;
+	float: right;
 }
 
 .slides-arrow.left {
@@ -512,15 +491,11 @@ pre {
 }
 
 .slide-container {
-
-	position:relative;
-	
+	position: relative;
 	margin-top: 30px;
-
 	background-color: #2D2D24;
 	box-shadow: inset 0px 2px 5px black;
-	
-/*
+	/*
 aspect ratio  | padding-bottom value
 --------------|----------------------
     16:9      |       56.25%
@@ -528,17 +503,17 @@ aspect ratio  | padding-bottom value
     3:2       |       66.66%
     8:5       |       62.5%
 */
-	padding-bottom:  56.25%;
+	padding-bottom: 56.25%;
 }
 
-.slides{
+.slides {
 	position: absolute;
 	padding: 8px;
 	margin: 0 auto;
-	left:0;
-	right:0;
+	left: 0;
+	right: 0;
 	bottom: 0;
-	top:0;
+	top: 0;
 }
 
 .slides img {
@@ -553,7 +528,7 @@ aspect ratio  | padding-bottom value
 	display: block;
 }
 
-.slide-dots{
+.slide-dots {
 	height: 30px;
 	display: inline-flex;
 	align-items: center;
@@ -572,7 +547,7 @@ aspect ratio  | padding-bottom value
 }
 
 .slide-dots .selected {
-  background-color: #E7B53B;
+	background-color: #E7B53B;
 }
 
 .slide-dots :hover {
@@ -580,32 +555,26 @@ aspect ratio  | padding-bottom value
 	background-color: #E7B53B;
 }
 
-.slide-caption
-{
+.slide-caption {
 	position: absolute;
-  bottom: 100%;
-	
+	bottom: 100%;
 	margin: 0;
-	
-  width: 100%;
+	width: 100%;
 	box-sizing: border-box;
-	
 	padding-right: 30px;
 	padding-left: 30px;
-  padding-top: 10px;
+	padding-top: 10px;
 	padding-bottom: 20px;
-	
 	background-color: #00000099;
 	box-shadow: 0px -5px 5px -2px #000000c7;
 }
+
 .slide-caption * {
 	margin: 0px;
-
 	width: 100%;
 	box-sizing: border-box;
-	
 	font-size: 80%;
-	overflow:hidden; 
+	overflow: hidden;
 	white-space: nowrap;
 }
 
@@ -614,7 +583,9 @@ aspect ratio  | padding-bottom value
 }
 
 /*-----------------------*/
+
 /*------- SKILLS --------*/
+
 /*-----------------------*/
 
 #skills img, #skills svg {
@@ -628,7 +599,7 @@ aspect ratio  | padding-bottom value
 	text-align: center;
 }
 
-#skills .container > div {
+#skills .container>div {
 	display: inline-block;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -638,23 +609,48 @@ aspect ratio  | padding-bottom value
 	margin-bottom: 50px;
 }
 
-#skills h3 ~ h3 {
+#skills h3~h3 {
 	margin-top: 100px;
 }
 
 /* expertiese levels: */
 
-.progress-bar.fundamental .progress { width: 20%; }
-.progress-bar.fundamental + .progress-bar-caption::after { content: "fundamental"; }
+.progress-bar.fundamental .progress {
+	width: 20%;
+}
 
-.progress-bar.basic .progress {	width: 40%;}
-.progress-bar.basic + .progress-bar-caption::after { content: "basic"; }
+.progress-bar.fundamental+.progress-bar-caption::after {
+	content: "fundamental";
+}
 
-.progress-bar.intermediate .progress {	width: 60%;}
-.progress-bar.intermediate + .progress-bar-caption::after { content: "intermediate"; }
+.progress-bar.basic .progress {
+	width: 40%;
+}
 
-.progress-bar.advanced .progress { width: 80%; }
-.progress-bar.advanced + .progress-bar-caption::after { content: "advanced"; }
+.progress-bar.basic+.progress-bar-caption::after {
+	content: "basic";
+}
 
-.progress-bar.expert .progress {	width: 100%;}
-.progress-bar.expert + .progress-bar-caption::after { content: "expert"; }
+.progress-bar.intermediate .progress {
+	width: 60%;
+}
+
+.progress-bar.intermediate+.progress-bar-caption::after {
+	content: "intermediate";
+}
+
+.progress-bar.advanced .progress {
+	width: 80%;
+}
+
+.progress-bar.advanced+.progress-bar-caption::after {
+	content: "advanced";
+}
+
+.progress-bar.expert .progress {
+	width: 100%;
+}
+
+.progress-bar.expert+.progress-bar-caption::after {
+	content: "expert";
+}
