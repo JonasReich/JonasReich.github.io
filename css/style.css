@@ -19,9 +19,12 @@ html, body {
 
 body {
 	text-align: center;
-	width: 100%;
 	align-items: center;
 }
+
+/*-----------------------*/
+/*------ HEADINGS -------*/
+/*-----------------------*/
 
 header {
 	display: block;
@@ -31,11 +34,6 @@ header {
 	padding-bottom: 60px;
 }
 
-header :any-link {
-	color: #7D4071;
-	text-decoration: none;
-}
-
 h1, h2, h3, h4, h5, h6 {
 	color: #7D4071;
 	padding: 0px;
@@ -43,12 +41,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 hr {
-	width: 100%;
-	color: rgba(125, 64, 113, 0.5);
-	border-color: rgba(125, 64, 113, 0.5);
 	background-color: rgba(125, 64, 113, 0.5);
 	height: 1px;
 	border: 0;
+	
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 header h1, header h2, header h3, header h4, header h5, header h6 {
@@ -62,36 +60,68 @@ table, tr, td, tbody {
 	padding: 0;
 }
 
-main {
-	margin: 0px auto;
-	width: 100%;
-	/*spacer*/
-	min-height: 1000px;
+img {
+	box-shadow: 2px 2px 5px #888888;
+	max-width: 100%;
 }
+
+/*-----------------------*/
+/*------- LINKS ---------*/
+/*-----------------------*/
 
 a, a:visited {
 	color: #7D4071;
+	text-decoration: none;
 }
 
-:any-link {
+a:hover {
+	text-decoration: underline;
 	color: #7D4071;
+	cursor: pointer;
 }
 
-#page-title {
-	margin-top: 50px;
-	padding: 50px;
+/*-----------------------*/
+/*------- BUTTONS -------*/
+/*-----------------------*/
+
+div.button, a.button {
+	cursor: pointer;
+	color: white;
+	padding: 15px 30px 15px 30px;
 }
+
+div.button {
+	text-align: center;
+	padding: 15px 0px 15px 0px;
+	background-color: white;
+	border: 1px solid #7D4071;
+	color: #7D4071;
+	box-shadow: 1px 1px 5px #888888;
+}
+
+a.button:hover, div.button:hover {
+	background-color: #E7B53B;
+	color: #7D4071;
+	text-decoration: none;
+}
+
+.button, .fade {
+	transition: background .25s ease-in-out, color .25s ease-in-out;
+	-moz-transition: background .25s ease-in-out, color .25s ease-in-out;
+	-webkit-transition: background .25s ease-in-out, color .25s ease-in-out;
+}
+
+/*-----------------------*/
+/*------ MAIN MENU ------*/
+/*-----------------------*/
 
 #main-menu {
 	background-color: #7D4071;
-	/*padding-bottom: 15px;*/
 	position: fixed;
 	top: 0px;
 	width: 100%;
 	z-index: 1000;
-	left: 0px;
 	box-shadow: 0px 2px 5px black;
-	z-index: 100;
 }
 
 #main-menu li {
@@ -105,14 +135,6 @@ a, a:visited {
 	height: 30px;
 	right: 60px;
 	top: 10px;
-}
-
-div.button, a.button {
-	color: white;
-	text-decoration: none;
-	background-color: #7D4071;
-	text-align: center;
-	padding: 15px 30px 15px 30px;
 }
 
 @media only screen and (max-width: 640px) {
@@ -163,37 +185,9 @@ div.button, a.button {
 	}
 }
 
-a.button-container {
-	text-decoration: none;
-}
-
-img, .progress-bar {
-	box-shadow: 2px 2px 5px #888888;
-	max-width: 100%;
-}
-
-.line img, #about-me img, #skills img {
-	box-shadow: 0px 0px 0px;
-}
-
-div.button {
-	text-align: center;
-	padding: 15px 0px 15px 0px;
-	background-color: white;
-	border: 1px solid #7D4071;
-	color: #7D4071;
-	box-shadow: 1px 1px 5px #888888;
-}
-
-a.button:hover, div.button:hover {
-	background-color: #E7B53B;
-	color: white;
-	text-decoration: none;
-}
-
-.section-spacer {
-	/*height: 50px;*/
-}
+/*-----------------------*/
+/*----- CENTER IMAGES ---*/
+/*-----------------------*/
 
 .center-wrapper {
 	height: 100%;
@@ -214,17 +208,19 @@ table.centered {
 	max-width: 100%;
 }
 
+/*-----------------------*/
+/*------- SECTIONS ------*/
+/*-----------------------*/
+
 section {
 	min-height: 325px;
 	background: linear-gradient(rgba(125, 64, 113, 0.1) 0px, white 325px);
-	width: 100%;
-	text-align: center;
 	border-top: 1px solid;
 	border-color: rgba(125, 64, 113, 0.5);
 	padding-bottom: 50px;
 }
 
-.container {
+.section-container {
 	text-align: left;
 	max-width: 800px;
 	padding: 5%;
@@ -232,8 +228,42 @@ section {
 	margin: 0 auto;
 }
 
-.circular {
-	border-radius: 50%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------*/
+/*--- BIGGEST BLOCKS ----*/
+/*-----------------------*/
+
+main {
+	margin: 0px auto;
+	width: 100%;
+	min-height: 1000px;
+}
+
+#page-title {
+	margin-top: 50px;
+	padding: 50px;
 }
 
 #about-me-portrait {
@@ -243,20 +273,25 @@ section {
 	width: 30%;
 }
 
+#about-me-portrait img {
+	border-radius: 50%;
+	box-shadow: 0px 0px 0px;
+}
+
 @media only screen and (max-width: 640px) {
 	#about-me-portrait {
 		float:none;
 		text-align: center;
 		width: 100%;
 	}
-	#about-me-portrait img{
+	#about-me-portrait img {
 		max-width: 50%;
 	}
 }
 
-#games hr {
-	margin-top: 50px;
-	margin-bottom: 50px;
+
+#skills img {
+	box-shadow: 0px 0px 0px;
 }
 
 /* sidebar = logo + links*/
@@ -280,101 +315,6 @@ section {
 	width: auto;
 }
 
-/*-----------------------*/
-
-/* ------ LINE ------*/
-
-/*-----------------------*/
-
-.line {
-	position: relative;
-	overflow: auto;
-}
-
-.line h3 {
-	background: white;
-	max-width: 6em;
-	margin: 1em auto 1em;
-	padding: 0.5em;
-	text-align: center;
-	position: relative;
-	clear: both;
-	border: 2px #7D4071 solid;
-}
-
-.line>ul {
-	list-style: none;
-	padding: 0 1em 0 1em;
-	z-index: 1;
-}
-
-.line>ul>li {
-	background: white;
-	padding: 1em;
-	margin-bottom: 1em;
-	position: relative;
-	border: 2px #7D4071 solid;
-	box-shadow: 2px 2px 5px #888888;
-}
-
-.line:before {
-	content: '';
-	width: 0;
-	height: 0;
-	position: absolute;
-	left: -1em;
-}
-
-.line h4 {
-	margin-top: 0;
-}
-
-@media screen and (min-width: 40em) {
-	.line:before {
-		background: #7D4071;
-		left: 50%;
-		height: 100%;
-		width: 2px;
-	}
-	.line>ul {
-		padding-left: 0;
-		max-width: 100%;
-		padding: 0;
-	}
-	.line>ul>li {
-		width: 42%;
-	}
-	.line>ul>li:nth-child(even) {
-		float: right;
-		margin-top: 2em;
-		/*box shadow margin*/
-		margin-right: 5px;
-	}
-	.line>ul>li:nth-child(odd) {
-		float: left;
-		margin-left: 5px;
-	}
-	.line>ul>li:nth-child(odd):before {
-		border-top: 1em solid #7D4071;
-		border-right: 1em solid transparent;
-		border-left: 1em;
-		right: -1em;
-		left: auto;
-	}
-	.line>ul>li:before {
-		content: '';
-		width: 0;
-		height: 0;
-		border-top: 1em solid #7D4071;
-		border-left: 1em solid transparent;
-		position: absolute;
-		left: -1em;
-	}
-	.line>ul>li:nth-of-type(2n+1) {
-		clear: both;
-	}
-}
-
 section#games time {
 	float: right;
 	font-style: italic;
@@ -389,11 +329,12 @@ section#games time::before {
 /****/
 
 .progress-bar {
-	width: 80%;
 	background: rgba(45, 45, 36, 0.1);
 	margin: 15px auto;
 	padding: 5px;
 	width: 150px;
+	box-shadow: 2px 2px 5px #888888;
+	max-width: 100%;
 }
 
 .progress-bar .progress {
@@ -405,30 +346,6 @@ section#games time::before {
 	margin-bottom: 30px;
 }
 
-/*-----------------------*/
-
-/*-------- FADE ---------*/
-
-/*-----------------------*/
-
-.button, .fade {
-	transition: background .25s ease-in-out, color .25s ease-in-out;
-	-moz-transition: background .25s ease-in-out, color .25s ease-in-out;
-	-webkit-transition: background .25s ease-in-out, color .25s ease-in-out;
-}
-
-.button:hover {
-	cursor: pointer;
-}
-
-:any-link:hover {
-	color: #E7B53B;
-	cursor: pointer;
-}
-
-a:hover {
-	color: #E7B53B;
-}
 
 /*-----------------------*/
 /*------ COLLAPSE -------*/
@@ -626,12 +543,12 @@ aspect ratio  | padding-bottom value
 	width: 50px;
 }
 
-#skills .container {
+#skills .section-container {
 	max-width: 100%;
 	text-align: center;
 }
 
-#skills .container>div {
+#skills .section-container > div {
 	display: inline-block;
 	padding-left: 20px;
 	padding-right: 20px;
