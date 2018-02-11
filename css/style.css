@@ -236,6 +236,24 @@ section {
 	border-radius: 50%;
 }
 
+#about-me-portrait {
+	margin-right: 30px;
+	float:left;
+	margin-top: 1em;
+	width: 30%;
+}
+
+@media only screen and (max-width: 640px) {
+	#about-me-portrait {
+		float:none;
+		text-align: center;
+		width: 100%;
+	}
+	#about-me-portrait img{
+		max-width: 50%;
+	}
+}
+
 #games hr {
 	margin-top: 50px;
 	margin-bottom: 50px;
