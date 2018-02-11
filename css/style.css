@@ -471,7 +471,6 @@ pre {
 	font-size: 20px;
 	position: absolute;
 	height: 100%;
-	top: 0%;
 	color: transparent;
 	width: 30%;
 }
@@ -498,9 +497,9 @@ pre {
 	background: linear-gradient(90deg, black, transparent);
 }
 
-.slides-arrow div{
+.slides-arrow p{
 	position: relative;
-	top: 50%;
+	top: 45%;
 }
 
 .slide-container {
@@ -577,7 +576,7 @@ aspect ratio  | padding-bottom value
 	padding-right: 30px;
 	padding-left: 30px;
 	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 15px;
 	background-color: #00000099;
 	box-shadow: 0px -5px 5px -2px #000000c7;
 }
